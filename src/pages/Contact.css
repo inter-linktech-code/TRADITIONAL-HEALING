@@ -41,7 +41,7 @@
   align-items: center;
   background:
     linear-gradient(90deg, rgba(5, 9, 5, 0.96), rgba(5, 9, 5, 0.73) 55%, rgba(5, 9, 5, 0.35)),
-    url("/src/assets/images/traditional-spiritual-healer.jpg") center 40% / cover no-repeat;
+    url("../assets/traditional-spiritual-healer.jpg") center 40% / cover no-repeat;
 }
 
 .aw-contact-hero-overlay {
@@ -664,7 +664,7 @@
   padding: 100px 0;
   text-align: center;
   background:
-    url("/src/assets/images/ancestral-spiritual-wisdom.jpg") center / cover no-repeat;
+    url("../assets/ancestral-spiritual-wisdom.jpg") center / cover no-repeat;
 }
 
 .aw-contact-final-overlay {

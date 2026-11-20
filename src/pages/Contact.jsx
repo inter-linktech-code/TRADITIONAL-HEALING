@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
-  CheckCircle2,
   ChevronDown,
   Clock,
   Compass,
@@ -16,6 +15,9 @@ import {
 
 import SEO from "../components/SEO";
 import "./Contact.css";
+
+import consultationImage from "../assets/spiritual-guidance-consultation.jpg";
+import natureImage from "../assets/spiritual-guidance-in-nature.jpg";
 
 const WHATSAPP = "27732335239";
 
@@ -79,7 +81,11 @@ I look forward to hearing from you.
 Thank you.
     `.trim();
 
-    window.open(whatsappLink(message), "_blank", "noopener,noreferrer");
+    window.open(
+      whatsappLink(message),
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   return (
@@ -125,7 +131,10 @@ Thank you.
                 Chat on WhatsApp
               </a>
 
-              <a href="#contact-form" className="aw-contact-outline-btn">
+              <a
+                href="#contact-form"
+                className="aw-contact-outline-btn"
+              >
                 Send an Enquiry
                 <ArrowRight size={17} />
               </a>
@@ -168,6 +177,7 @@ Thank you.
                 <div className="aw-contact-promise-icon">
                   <Heart size={21} />
                 </div>
+
                 <div>
                   <h3>Your concerns deserve respect</h3>
                   <p>
@@ -180,12 +190,13 @@ Thank you.
 
             <div className="aw-contact-intro-image">
               <img
-                src="/src/assets/images/spiritual-guidance-consultation.jpg"
+                src={consultationImage}
                 alt="A peaceful setting for a traditional spiritual guidance conversation"
               />
 
               <div className="aw-contact-image-caption">
                 <Sparkles size={18} />
+
                 <div>
                   <strong>ANCESTRAL WISDOM</strong>
                   <span>Wisdom & Spiritual Guidance</span>
@@ -219,27 +230,42 @@ Thank you.
                 <div className="aw-contact-option-icon">
                   <MessageCircle size={25} />
                 </div>
-                <span className="aw-contact-card-label">DIRECT ENQUIRIES</span>
+
+                <span className="aw-contact-card-label">
+                  DIRECT ENQUIRIES
+                </span>
+
                 <h3>WhatsApp</h3>
+
                 <p>
                   Send a message to introduce yourself and explain what you
                   would like to enquire about.
                 </p>
+
                 <strong>
                   Start a conversation <ArrowRight size={16} />
                 </strong>
               </a>
 
-              <a href="#contact-form" className="aw-contact-option-card">
+              <a
+                href="#contact-form"
+                className="aw-contact-option-card"
+              >
                 <div className="aw-contact-option-icon">
                   <Send size={24} />
                 </div>
-                <span className="aw-contact-card-label">DETAILED MESSAGE</span>
+
+                <span className="aw-contact-card-label">
+                  DETAILED MESSAGE
+                </span>
+
                 <h3>Enquiry Form</h3>
+
                 <p>
                   Share your enquiry topic and a little more detail using our
                   simple message form.
                 </p>
+
                 <strong>
                   Complete the form <ArrowRight size={16} />
                 </strong>
@@ -249,22 +275,29 @@ Thank you.
                 <div className="aw-contact-option-icon">
                   <Clock size={25} />
                 </div>
-                <span className="aw-contact-card-label">RESPONSE INFORMATION</span>
+
+                <span className="aw-contact-card-label">
+                  RESPONSE INFORMATION
+                </span>
+
                 <h3>Response Times</h3>
+
                 <p>
                   We aim to respond to enquiries as soon as reasonably
                   possible. Response times may vary.
                 </p>
-                <strong>
-                  Thank you for your patience
-                </strong>
+
+                <strong>Thank you for your patience</strong>
               </div>
             </div>
           </div>
         </section>
 
-        {/* FORM */}
-        <section className="aw-contact-form-section" id="contact-form">
+        {/* ENQUIRY FORM */}
+        <section
+          className="aw-contact-form-section"
+          id="contact-form"
+        >
           <div className="aw-contact-container aw-contact-form-layout">
             <div className="aw-contact-form-copy">
               <span className="aw-contact-eyebrow">
@@ -285,6 +318,7 @@ Thank you.
 
               <div className="aw-contact-form-benefit">
                 <ShieldCheck size={22} />
+
                 <div>
                   <h3>Share only what you are comfortable sharing</h3>
                   <p>
@@ -296,6 +330,7 @@ Thank you.
 
               <div className="aw-contact-form-benefit">
                 <Compass size={22} />
+
                 <div>
                   <h3>Know what to expect</h3>
                   <p>
@@ -308,7 +343,7 @@ Thank you.
 
               <img
                 className="aw-contact-form-image"
-                src="/src/assets/images/spiritual-guidance-in-nature.jpg"
+                src={natureImage}
                 alt="Peaceful natural surroundings representing reflection and spiritual guidance"
               />
             </div>
@@ -322,7 +357,10 @@ Thank you.
 
               <form onSubmit={handleSubmit}>
                 <div className="aw-contact-field">
-                  <label htmlFor="contact-name">Your Name *</label>
+                  <label htmlFor="contact-name">
+                    Your Name *
+                  </label>
+
                   <input
                     id="contact-name"
                     name="name"
@@ -335,7 +373,10 @@ Thank you.
                 </div>
 
                 <div className="aw-contact-field">
-                  <label htmlFor="contact-email">Email Address</label>
+                  <label htmlFor="contact-email">
+                    Email Address
+                  </label>
+
                   <input
                     id="contact-email"
                     name="email"
@@ -347,7 +388,10 @@ Thank you.
                 </div>
 
                 <div className="aw-contact-field">
-                  <label htmlFor="contact-topic">What Is Your Enquiry About? *</label>
+                  <label htmlFor="contact-topic">
+                    What Is Your Enquiry About? *
+                  </label>
+
                   <div className="aw-contact-select-wrap">
                     <select
                       id="contact-topic"
@@ -356,19 +400,26 @@ Thank you.
                       onChange={updateField}
                       required
                     >
-                      <option value="">Select an enquiry topic</option>
+                      <option value="">
+                        Select an enquiry topic
+                      </option>
+
                       {topics.map((topic) => (
                         <option key={topic} value={topic}>
                           {topic}
                         </option>
                       ))}
                     </select>
+
                     <ChevronDown size={17} />
                   </div>
                 </div>
 
                 <div className="aw-contact-field">
-                  <label htmlFor="contact-message">Your Message *</label>
+                  <label htmlFor="contact-message">
+                    Your Message *
+                  </label>
+
                   <textarea
                     id="contact-message"
                     name="message"
@@ -381,12 +432,18 @@ Thank you.
                 </div>
 
                 {error && (
-                  <div className="aw-contact-error" role="alert">
+                  <div
+                    className="aw-contact-error"
+                    role="alert"
+                  >
                     {error}
                   </div>
                 )}
 
-                <button type="submit" className="aw-contact-submit">
+                <button
+                  type="submit"
+                  className="aw-contact-submit"
+                >
                   <MessageCircle size={19} />
                   Continue to WhatsApp
                   <ArrowRight size={17} />
@@ -406,8 +463,12 @@ Thank you.
         <section className="aw-contact-services">
           <div className="aw-contact-container">
             <div className="aw-contact-section-heading">
-              <span className="aw-contact-eyebrow">EXPLORE OUR SERVICES</span>
+              <span className="aw-contact-eyebrow">
+                EXPLORE OUR SERVICES
+              </span>
+
               <h2>What Would You Like to Discuss?</h2>
+
               <p>
                 Explore our existing service pages before sending your
                 enquiry.
@@ -418,24 +479,31 @@ Thank you.
               <Link to="/love-spells">
                 Love & Relationship Guidance <ArrowRight size={16} />
               </Link>
+
               <Link to="/lost-love">
                 Lost Love & Reconciliation <ArrowRight size={16} />
               </Link>
+
               <Link to="/money-spells">
                 Money & Prosperity <ArrowRight size={16} />
               </Link>
+
               <Link to="/luck-success">
                 Luck & Success <ArrowRight size={16} />
               </Link>
+
               <Link to="/spiritual-cleansing">
                 Spiritual Cleansing <ArrowRight size={16} />
               </Link>
+
               <Link to="/protection">
                 Spiritual Protection <ArrowRight size={16} />
               </Link>
+
               <Link to="/traditional-healing">
                 Traditional Healing <ArrowRight size={16} />
               </Link>
+
               <Link to="/services">
                 View All Services <ArrowRight size={16} />
               </Link>
@@ -447,11 +515,15 @@ Thank you.
         <section className="aw-contact-faq">
           <div className="aw-contact-container aw-contact-faq-layout">
             <div className="aw-contact-faq-heading">
-              <span className="aw-contact-eyebrow">HELPFUL INFORMATION</span>
+              <span className="aw-contact-eyebrow">
+                HELPFUL INFORMATION
+              </span>
+
               <h2>
                 Before You
                 <span> Get in Touch</span>
               </h2>
+
               <p>
                 Here are a few answers to common questions about making an
                 enquiry.
@@ -464,6 +536,7 @@ Thank you.
                   How do I make an enquiry?
                   <ChevronDown size={19} />
                 </summary>
+
                 <p>
                   You can contact Ancestral Wisdom through WhatsApp or
                   complete the enquiry form on this page. The form prepares a
@@ -476,6 +549,7 @@ Thank you.
                   Do I need to know which service I need?
                   <ChevronDown size={19} />
                 </summary>
+
                 <p>
                   No. You can select general spiritual enquiry if you are
                   unsure. Briefly explain what you would like to discuss and
@@ -488,6 +562,7 @@ Thank you.
                   Can I enquire from another country?
                   <ChevronDown size={19} />
                 </summary>
+
                 <p>
                   You are welcome to send an enquiry from South Africa,
                   Germany, the United States, Zimbabwe, Namibia or elsewhere.
@@ -501,6 +576,7 @@ Thank you.
                   Do I have to proceed after making an enquiry?
                   <ChevronDown size={19} />
                 </summary>
+
                 <p>
                   No. An enquiry does not obligate you to purchase or proceed
                   with a service. You should have the opportunity to ask
@@ -513,6 +589,7 @@ Thank you.
                   Is my enquiry a substitute for medical or professional help?
                   <ChevronDown size={19} />
                 </summary>
+
                 <p>
                   No. Spiritual guidance is not a substitute for medical,
                   mental health, legal or financial advice. Please consult
@@ -530,7 +607,9 @@ Thank you.
           <div className="aw-contact-container aw-contact-final-content">
             <Sparkles size={28} />
 
-            <span className="aw-contact-eyebrow">ANCESTRAL WISDOM</span>
+            <span className="aw-contact-eyebrow">
+              ANCESTRAL WISDOM
+            </span>
 
             <h2>
               Every Conversation
@@ -562,9 +641,11 @@ Thank you.
           </div>
         </section>
 
+        {/* DISCLAIMER */}
         <div className="aw-contact-disclaimer">
           <div className="aw-contact-container">
             <ShieldCheck size={17} />
+
             <p>
               Spiritual guidance and traditional practices are matters of
               personal belief and cultural tradition. No specific outcome is
