@@ -1,0 +1,911 @@
+
+/* =========================================================
+   ANCESTRAL WISDOM
+   NAMIBIA LANDING PAGE
+   ========================================================= */
+
+.nam-page {
+  --nam-black: #080b08;
+  --nam-forest: #101710;
+  --nam-gold: #c5a45c;
+  --nam-gold-light: #dfc68d;
+  --nam-cream: #f3efe5;
+  --nam-muted: #b8b9ae;
+  --nam-border: rgba(197, 164, 92, 0.2);
+
+  background: var(--nam-black);
+  color: var(--nam-cream);
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+
+.nam-page *,
+.nam-page *::before,
+.nam-page *::after {
+  box-sizing: border-box;
+}
+
+.nam-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.nam-section {
+  padding: 105px 0;
+}
+
+.nam-kicker {
+  display: inline-block;
+  margin-bottom: 17px;
+  color: var(--nam-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.nam-section-heading {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.nam-section-heading h2,
+.nam-section-copy h2 {
+  margin: 0 0 22px;
+  color: var(--nam-cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(35px, 4.5vw, 53px);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.nam-section-heading > p,
+.nam-section-copy > p {
+  color: var(--nam-muted);
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.nam-section-heading > p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* BUTTONS */
+
+.nam-btn {
+  min-height: 53px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 14px 22px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nam-btn-gold {
+  background: var(--nam-gold);
+  color: #11150e;
+}
+
+.nam-btn-gold:hover {
+  background: var(--nam-gold-light);
+  transform: translateY(-3px);
+}
+
+.nam-btn-outline {
+  border-color: rgba(223, 198, 141, 0.55);
+  color: var(--nam-cream);
+  background: transparent;
+}
+
+.nam-btn-outline:hover {
+  border-color: var(--nam-gold);
+  background: rgba(197, 164, 92, 0.1);
+  color: var(--nam-gold-light);
+}
+
+.nam-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 17px;
+  color: var(--nam-gold-light);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.25s ease;
+}
+
+.nam-text-link:hover {
+  gap: 16px;
+}
+
+/* HERO */
+
+.nam-hero {
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(5, 10, 6, 0.97) 0%, rgba(5, 10, 6, 0.84) 49%, rgba(5, 10, 6, 0.42) 100%),
+    url("../assets/images/spiritual-consultation-namibia.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.nam-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    var(--nam-black) 0%,
+    transparent 24%,
+    transparent 78%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+  pointer-events: none;
+}
+
+.nam-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+  padding-bottom: 105px;
+}
+
+.nam-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  color: var(--nam-gold-light);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.nam-hero h1 {
+  max-width: 830px;
+  margin: 0;
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 7vw, 82px);
+  font-weight: 500;
+  line-height: 0.99;
+  letter-spacing: -1.5px;
+}
+
+.nam-hero h1 span {
+  display: block;
+  color: var(--nam-gold-light);
+}
+
+.nam-hero-subtitle {
+  max-width: 660px;
+  margin: 27px 0 32px;
+  color: rgba(255, 255, 255, 0.79);
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.nam-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.nam-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 38px;
+}
+
+.nam-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.77);
+  font-size: 11px;
+}
+
+.nam-hero-trust svg {
+  color: var(--nam-gold);
+}
+
+.nam-hero-bottom {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 20px;
+  border-top: 1px solid rgba(197, 164, 92, 0.2);
+  color: var(--nam-gold-light);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.nam-hero-bottom-line {
+  width: 35px;
+  height: 1px;
+  background: var(--nam-gold);
+  opacity: 0.6;
+}
+
+/* TWO COLUMN SECTIONS */
+
+.nam-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.nam-image-frame {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+  border: 1px solid var(--nam-border);
+}
+
+.nam-image-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.nam-image-frame:hover img {
+  transform: scale(1.045);
+}
+
+.nam-image-caption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 19px;
+  background: rgba(8, 11, 8, 0.88);
+  color: var(--nam-gold-light);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.nam-section-copy h2 {
+  max-width: 620px;
+}
+
+.nam-section-copy > p {
+  margin: 0 0 17px;
+}
+
+.nam-intro {
+  background: var(--nam-black);
+}
+
+.nam-heritage {
+  background: var(--nam-forest);
+}
+
+.nam-heritage-grid {
+  gap: 85px;
+}
+
+.nam-image-frame-tall,
+.nam-image-frame-tall img {
+  min-height: 530px;
+}
+
+/* FEATURE LIST */
+
+.nam-feature-list {
+  display: grid;
+  gap: 17px;
+  margin-top: 30px;
+}
+
+.nam-feature-list > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--nam-cream);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.nam-feature-list svg {
+  width: 19px;
+  min-width: 19px;
+  color: var(--nam-gold);
+}
+
+/* SERVICES */
+
+.nam-services {
+  background: #0b100b;
+}
+
+.nam-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.nam-service-card {
+  min-height: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 31px 27px;
+  border: 1px solid var(--nam-border);
+  background: linear-gradient(145deg, #121a12, #0c110c);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.nam-service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(197, 164, 92, 0.65);
+}
+
+.nam-service-icon {
+  width: 53px;
+  height: 53px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 23px;
+  border: 1px solid rgba(197, 164, 92, 0.35);
+  color: var(--nam-gold);
+}
+
+.nam-service-card h3 {
+  margin: 0 0 12px;
+  color: var(--nam-cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.nam-service-card p {
+  margin: 0 0 20px;
+  color: var(--nam-muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.nam-service-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  color: var(--nam-gold-light);
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* HEALING */
+
+.nam-healing {
+  background: var(--nam-forest);
+}
+
+/* LOCATIONS */
+
+.nam-locations {
+  background: var(--nam-black);
+}
+
+.nam-location-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+}
+
+.nam-location-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 19px;
+  border: 1px solid var(--nam-border);
+  background: #101710;
+  color: var(--nam-cream);
+  font-size: 13px;
+  transition: 0.25s ease;
+}
+
+.nam-location-item:hover {
+  border-color: var(--nam-gold);
+  color: var(--nam-gold-light);
+}
+
+.nam-location-item svg {
+  color: var(--nam-gold);
+}
+
+.nam-location-note {
+  max-width: 850px;
+  margin: 25px auto 0;
+  color: #96998e;
+  font-size: 11px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* PROCESS */
+
+.nam-process {
+  background: var(--nam-forest);
+}
+
+.nam-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.nam-process-card {
+  position: relative;
+  min-height: 255px;
+  padding: 35px 30px;
+  border: 1px solid var(--nam-border);
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.nam-step-number {
+  position: absolute;
+  top: 20px;
+  right: 23px;
+  color: rgba(197, 164, 92, 0.35);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 35px;
+}
+
+.nam-process-card > svg {
+  margin: 28px 0 17px;
+  color: var(--nam-gold);
+}
+
+.nam-process-card h3 {
+  margin: 0 0 12px;
+  color: var(--nam-cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+}
+
+.nam-process-card p {
+  margin: 0;
+  color: var(--nam-muted);
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+/* REFLECTION */
+
+.nam-reflection {
+  position: relative;
+  min-height: 490px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--nam-black);
+}
+
+.nam-reflection-image {
+  position: absolute;
+  inset: 0;
+}
+
+.nam-reflection-image::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(8, 11, 8, 0.97) 0%,
+    rgba(8, 11, 8, 0.9) 48%,
+    rgba(8, 11, 8, 0.35) 100%
+  );
+}
+
+.nam-reflection-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nam-reflection-content {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 95px 0;
+}
+
+.nam-reflection-content h2 {
+  max-width: 650px;
+  margin: 0 0 20px;
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(39px, 5vw, 59px);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.nam-reflection-content p {
+  max-width: 610px;
+  margin: 0 0 28px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* FAQ */
+
+.nam-faq {
+  background: #0b100b;
+}
+
+.nam-faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.nam-faq-item {
+  display: flex;
+  gap: 18px;
+  padding: 26px 23px;
+  border: 1px solid var(--nam-border);
+  background: #101710;
+}
+
+.nam-faq-number {
+  color: var(--nam-gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+}
+
+.nam-faq-item h3 {
+  margin: 0 0 10px;
+  color: var(--nam-cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.nam-faq-item p {
+  margin: 0;
+  color: var(--nam-muted);
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+/* ABOUT AND CONTACT LINKS */
+
+.nam-testimonial-link {
+  padding: 75px 0;
+  background: var(--nam-forest);
+  text-align: center;
+}
+
+.nam-testimonial-inner h2 {
+  margin: 15px 0;
+  color: var(--nam-cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(33px, 4vw, 45px);
+  font-weight: 500;
+}
+
+.nam-testimonial-inner > p {
+  max-width: 600px;
+  margin: 0 auto 27px;
+  color: var(--nam-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.nam-stars {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  color: var(--nam-gold);
+}
+
+.nam-stars svg {
+  width: 17px;
+  height: 17px;
+  fill: var(--nam-gold);
+}
+
+.nam-bottom-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+/* DISCLAIMER */
+
+.nam-disclaimer {
+  padding: 28px 0;
+  border-top: 1px solid var(--nam-border);
+  border-bottom: 1px solid var(--nam-border);
+  background: #0a0e0a;
+}
+
+.nam-disclaimer .nam-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.nam-disclaimer svg {
+  min-width: 22px;
+  margin-top: 3px;
+  color: var(--nam-gold);
+}
+
+.nam-disclaimer p {
+  margin: 0;
+  color: #a9aa9f;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.nam-disclaimer strong {
+  color: var(--nam-gold-light);
+}
+
+/* FINAL CTA */
+
+.nam-final-cta {
+  padding: 100px 0;
+  background:
+    radial-gradient(ellipse at center, rgba(197, 164, 92, 0.1), transparent 65%),
+    var(--nam-black);
+  text-align: center;
+}
+
+.nam-final-cta h2 {
+  max-width: 800px;
+  margin: 0 auto 19px;
+  color: var(--nam-cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.nam-final-cta p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: var(--nam-muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .nam-two-column {
+    gap: 40px;
+  }
+
+  .nam-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nam-location-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nam-hero {
+    min-height: 660px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nam-container {
+    width: min(100% - 34px, 560px);
+  }
+
+  .nam-section {
+    padding: 75px 0;
+  }
+
+  .nam-hero {
+    min-height: 710px;
+    background-position: 58% center;
+  }
+
+  .nam-hero-content {
+    padding-top: 65px;
+    padding-bottom: 110px;
+  }
+
+  .nam-eyebrow {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .nam-hero h1 {
+    font-size: clamp(43px, 12vw, 63px);
+  }
+
+  .nam-hero-subtitle {
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .nam-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .nam-hero-actions .nam-btn {
+    width: 100%;
+  }
+
+  .nam-hero-trust {
+    display: grid;
+    gap: 13px;
+    margin-top: 27px;
+  }
+
+  .nam-hero-bottom {
+    gap: 10px;
+    padding: 16px 8px;
+    font-size: 7px;
+    letter-spacing: 1.5px;
+  }
+
+  .nam-hero-bottom-line {
+    width: 16px;
+  }
+
+  .nam-two-column {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .nam-section-heading {
+    margin-bottom: 38px;
+  }
+
+  .nam-section-heading h2,
+  .nam-section-copy h2 {
+    font-size: 39px;
+  }
+
+  .nam-section-heading > p,
+  .nam-section-copy > p {
+    font-size: 13px;
+  }
+
+  .nam-image-frame,
+  .nam-image-frame img {
+    min-height: 330px;
+  }
+
+  .nam-image-frame-tall,
+  .nam-image-frame-tall img {
+    min-height: 380px;
+  }
+
+  .nam-services-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .nam-service-card {
+    min-height: 230px;
+    padding: 26px 23px;
+  }
+
+  .nam-location-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+
+  .nam-location-item {
+    padding: 15px 12px;
+    font-size: 11px;
+  }
+
+  .nam-process-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .nam-process-card {
+    min-height: 215px;
+  }
+
+  .nam-reflection {
+    min-height: 520px;
+  }
+
+  .nam-reflection-content {
+    width: min(100% - 34px, 560px);
+    padding: 75px 0;
+  }
+
+  .nam-reflection-content h2 {
+    font-size: 43px;
+  }
+
+  .nam-reflection-content p {
+    font-size: 13px;
+  }
+
+  .nam-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nam-faq-item {
+    padding: 21px 17px;
+  }
+
+  .nam-faq-item h3 {
+    font-size: 20px;
+  }
+
+  .nam-disclaimer .nam-container {
+    gap: 11px;
+  }
+
+  .nam-final-cta {
+    padding: 75px 0;
+  }
+
+  .nam-final-cta h2 {
+    font-size: 40px;
+  }
+
+  .nam-bottom-links {
+    flex-direction: column;
+  }
+
+  .nam-bottom-links .nam-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .nam-location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nam-hero h1 {
+    font-size: 42px;
+  }
+
+  .nam-hero-bottom {
+    font-size: 6px;
+    gap: 7px;
+  }
+}

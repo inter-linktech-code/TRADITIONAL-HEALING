@@ -1,0 +1,1283 @@
+
+/* =========================================================
+   ANCESTRAL WISDOM
+   TRADITIONAL HEALING PAGE
+   PREMIUM DESIGN SYSTEM
+========================================================= */
+
+.traditional-page {
+  --traditional-black: #080b08;
+  --traditional-dark: #101710;
+  --traditional-green: #1b2b1e;
+  --traditional-green-light: #293b2c;
+  --traditional-gold: #c5a45c;
+  --traditional-gold-light: #dfc68d;
+  --traditional-white: #f6f4ed;
+  --traditional-muted: #aaa99f;
+
+  background: var(--traditional-black);
+  color: var(--traditional-white);
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+
+.traditional-page *,
+.traditional-page *::before,
+.traditional-page *::after {
+  box-sizing: border-box;
+}
+
+.traditional-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.traditional-page a {
+  text-decoration: none;
+}
+
+.traditional-section {
+  padding: 110px 7%;
+}
+
+.traditional-section-label {
+  display: inline-block;
+  color: var(--traditional-gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.traditional-page h1,
+.traditional-page h2,
+.traditional-page h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.traditional-page h2 {
+  font-size: clamp(38px, 4.5vw, 66px);
+  line-height: 1.08;
+  margin: 20px 0;
+}
+
+.traditional-page h2 span {
+  display: block;
+  color: var(--traditional-gold);
+}
+
+.traditional-page p {
+  color: #bdbdb3;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.traditional-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 53px;
+  padding: 15px 24px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+.traditional-btn-gold {
+  background: var(--traditional-gold);
+  color: #11140e;
+  border: 1px solid var(--traditional-gold);
+}
+
+.traditional-btn-gold:hover {
+  background: var(--traditional-gold-light);
+  border-color: var(--traditional-gold-light);
+  transform: translateY(-3px);
+}
+
+.traditional-btn-outline {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.traditional-btn-outline:hover {
+  border-color: var(--traditional-gold);
+  color: var(--traditional-gold);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.traditional-hero {
+  position: relative;
+  min-height: 770px;
+  height: min(92vh, 920px);
+  display: flex;
+  align-items: center;
+  background: var(--traditional-dark);
+}
+
+.traditional-hero-image {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.traditional-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 9, 6, 0.96) 0%,
+      rgba(5, 9, 6, 0.88) 36%,
+      rgba(5, 9, 6, 0.52) 68%,
+      rgba(5, 9, 6, 0.2) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 9, 6, 0.9) 0%,
+      transparent 35%
+    );
+}
+
+.traditional-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(780px, 88%);
+  margin-left: 8%;
+  padding: 80px 0;
+}
+
+.traditional-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--traditional-gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 25px;
+}
+
+.traditional-hero h1 {
+  font-size: clamp(65px, 8vw, 112px);
+  line-height: 0.91;
+  letter-spacing: -1px;
+  color: #fff;
+  margin: 0 0 28px;
+}
+
+.traditional-hero h1 span {
+  display: block;
+  color: var(--traditional-gold);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.traditional-hero-subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 26px !important;
+  line-height: 1.5 !important;
+  color: #f2efe7 !important;
+  max-width: 650px;
+  margin: 0 0 12px;
+}
+
+.traditional-hero-description {
+  max-width: 600px;
+  margin-bottom: 30px;
+  font-size: 14px !important;
+}
+
+.traditional-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.traditional-hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 34px;
+}
+
+.traditional-hero-features span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #dedbd0;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+.traditional-hero-features svg {
+  color: var(--traditional-gold);
+}
+
+.traditional-hero-footer {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 9px;
+  letter-spacing: 2.5px;
+}
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.traditional-introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 85px;
+  background: #080b08;
+}
+
+.traditional-intro-image {
+  position: relative;
+  height: 570px;
+}
+
+.traditional-intro-image img {
+  object-position: center;
+}
+
+.traditional-intro-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: 18px;
+  border: 1px solid rgba(197, 164, 92, 0.4);
+  pointer-events: none;
+}
+
+.traditional-image-caption {
+  position: absolute;
+  z-index: 2;
+  left: -30px;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 26px;
+  background: var(--traditional-green);
+  border-left: 3px solid var(--traditional-gold);
+}
+
+.traditional-image-caption > svg {
+  color: var(--traditional-gold);
+}
+
+.traditional-image-caption strong {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.traditional-image-caption span {
+  display: block;
+  margin-top: 5px;
+  color: #aaa99f;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.traditional-intro-content h2 {
+  max-width: 650px;
+}
+
+.traditional-intro-content p {
+  margin-bottom: 18px;
+}
+
+.traditional-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--traditional-gold);
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.traditional-text-link:hover {
+  gap: 17px;
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.traditional-services {
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(42, 66, 45, 0.28),
+      transparent 55%
+    ),
+    #111710;
+}
+
+.traditional-section-heading {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.traditional-section-heading h2 {
+  margin-top: 20px;
+}
+
+.traditional-section-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.traditional-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.traditional-service-card {
+  position: relative;
+  min-height: 325px;
+  padding: 35px;
+  background: #151e16;
+  border: 1px solid rgba(197, 164, 92, 0.14);
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+.traditional-service-card:hover {
+  background: #1b281c;
+  border-color: rgba(197, 164, 92, 0.55);
+  transform: translateY(-7px);
+}
+
+.traditional-card-number {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  color: rgba(197, 164, 92, 0.3);
+}
+
+.traditional-service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+  margin-bottom: 24px;
+  color: var(--traditional-gold);
+  border: 1px solid rgba(197, 164, 92, 0.35);
+}
+
+.traditional-service-card h3 {
+  font-size: 28px;
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.traditional-service-card p {
+  font-size: 13px;
+  margin-bottom: 23px;
+}
+
+.traditional-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--traditional-gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.traditional-card-link:hover {
+  gap: 17px;
+}
+
+/* =========================================================
+   HERBAL KNOWLEDGE
+========================================================= */
+
+.traditional-herbs-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 700px;
+  background: #080b08;
+}
+
+.traditional-herbs-image {
+  height: 100%;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.traditional-herbs-image img {
+  transition: transform 0.7s ease;
+}
+
+.traditional-herbs-image:hover img {
+  transform: scale(1.04);
+}
+
+.traditional-herbs-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 85px 10%;
+}
+
+.traditional-herbs-content h2 {
+  max-width: 620px;
+}
+
+.traditional-herbs-content p {
+  margin-bottom: 16px;
+}
+
+.traditional-herbs-points {
+  display: grid;
+  gap: 15px;
+  margin: 25px 0 32px;
+}
+
+.traditional-herbs-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #dedbd2;
+  font-size: 12px;
+}
+
+.traditional-herbs-points svg {
+  color: var(--traditional-gold);
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   WELLBEING
+========================================================= */
+
+.traditional-wellbeing {
+  background: #0b100c;
+}
+
+.traditional-wellbeing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.traditional-wellbeing-card {
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+  background: #151e16;
+}
+
+.traditional-wellbeing-card img {
+  transition: transform 0.7s ease;
+}
+
+.traditional-wellbeing-card:hover img {
+  transform: scale(1.06);
+}
+
+.traditional-wellbeing-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(5, 9, 6, 0.96) 0%,
+      rgba(5, 9, 6, 0.62) 48%,
+      transparent 100%
+    );
+}
+
+.traditional-wellbeing-overlay > span {
+  color: var(--traditional-gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.traditional-wellbeing-overlay h3 {
+  font-size: 32px;
+  line-height: 1.1;
+  margin: 14px 0;
+}
+
+.traditional-wellbeing-overlay p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* =========================================================
+   CULTURAL HERITAGE
+========================================================= */
+
+.traditional-heritage {
+  padding: 110px 7%;
+  background: #101710;
+}
+
+.traditional-heritage-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.traditional-heritage-content h2 {
+  max-width: 650px;
+}
+
+.traditional-heritage-content p {
+  margin-bottom: 17px;
+}
+
+.traditional-heritage-quote {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding: 25px;
+  margin-top: 28px;
+  border-left: 2px solid var(--traditional-gold);
+  background: #151e16;
+}
+
+.traditional-heritage-quote svg {
+  flex-shrink: 0;
+  color: var(--traditional-gold);
+}
+
+.traditional-heritage-quote blockquote {
+  margin: 0;
+  color: #e4dfd2;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.traditional-heritage-image {
+  height: 600px;
+  position: relative;
+}
+
+.traditional-heritage-image::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(197, 164, 92, 0.35);
+  pointer-events: none;
+}
+
+/* =========================================================
+   CONSULTATION BANNER
+========================================================= */
+
+.traditional-banner {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 7%;
+  text-align: center;
+}
+
+.traditional-banner-image {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.traditional-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 10, 6, 0.82);
+}
+
+.traditional-banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+.traditional-banner-content h2 {
+  font-size: clamp(45px, 5vw, 72px);
+}
+
+.traditional-banner-content > p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.traditional-banner-content .traditional-btn {
+  margin-top: 10px;
+}
+
+/* =========================================================
+   CONSULTATION PROCESS
+========================================================= */
+
+.traditional-process {
+  background: #111710;
+}
+
+.traditional-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.traditional-process-card {
+  padding: 32px 26px;
+  background: #151e16;
+  border-top: 1px solid rgba(197, 164, 92, 0.5);
+}
+
+.traditional-process-number {
+  display: block;
+  color: var(--traditional-gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+}
+
+.traditional-process-icon {
+  color: var(--traditional-gold);
+  margin: 24px 0;
+}
+
+.traditional-process-card h3 {
+  font-size: 27px;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.traditional-process-card p {
+  font-size: 12px;
+}
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.traditional-values {
+  padding: 105px 7%;
+  background: #080b08;
+}
+
+.traditional-values-inner {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.traditional-values-heading {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.traditional-values-heading h2 {
+  margin: 20px 0;
+}
+
+.traditional-values-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.traditional-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.traditional-values-grid article {
+  padding: 32px 25px;
+  text-align: center;
+  background: #111710;
+  border: 1px solid rgba(197, 164, 92, 0.16);
+  transition: 0.3s ease;
+}
+
+.traditional-values-grid article:hover {
+  border-color: rgba(197, 164, 92, 0.45);
+  transform: translateY(-4px);
+}
+
+.traditional-values-grid article > svg {
+  color: var(--traditional-gold);
+  margin-bottom: 18px;
+}
+
+.traditional-values-grid h3 {
+  font-size: 27px;
+  margin: 0 0 12px;
+}
+
+.traditional-values-grid p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* =========================================================
+   COUNTRIES
+========================================================= */
+
+.traditional-countries {
+  background: #121a13;
+}
+
+.traditional-countries-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.traditional-country-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 23px 18px;
+  background: #0b100c;
+  border: 1px solid rgba(197, 164, 92, 0.2);
+  color: #f3f0e8;
+  font-size: 12px;
+  transition: 0.3s ease;
+}
+
+.traditional-country-card svg {
+  flex-shrink: 0;
+  color: var(--traditional-gold);
+}
+
+.traditional-country-card:hover {
+  color: var(--traditional-gold);
+  border-color: var(--traditional-gold);
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.traditional-faq {
+  background: #080b08;
+}
+
+.traditional-faq-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.traditional-faq-intro h2 {
+  font-size: clamp(40px, 4vw, 60px);
+}
+
+.traditional-faq-intro p {
+  margin-bottom: 25px;
+}
+
+.traditional-faq-list {
+  border-top: 1px solid rgba(197, 164, 92, 0.3);
+}
+
+.traditional-faq-item {
+  border-bottom: 1px solid rgba(197, 164, 92, 0.2);
+}
+
+.traditional-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 23px 0;
+  color: #f2efe7;
+  font-size: 13px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.traditional-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.traditional-faq-plus {
+  flex-shrink: 0;
+  color: var(--traditional-gold);
+  font-size: 25px;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.traditional-faq-item[open] .traditional-faq-plus {
+  transform: rotate(45deg);
+}
+
+.traditional-faq-item > p {
+  padding: 0 25px 20px 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* =========================================================
+   DISCLAIMER
+========================================================= */
+
+.traditional-disclaimer {
+  padding: 36px 7%;
+  background: #131c14;
+  border-top: 1px solid rgba(197, 164, 92, 0.15);
+  border-bottom: 1px solid rgba(197, 164, 92, 0.15);
+}
+
+.traditional-disclaimer-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.traditional-disclaimer-inner > svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: var(--traditional-gold);
+}
+
+.traditional-disclaimer h3 {
+  font-family: "DM Sans", sans-serif;
+  color: var(--traditional-gold);
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.traditional-disclaimer p {
+  font-size: 11px;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.traditional-final-cta {
+  padding: 115px 7%;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(37, 58, 42, 0.72),
+      transparent 70%
+    ),
+    #080b08;
+}
+
+.traditional-final-cta-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.traditional-final-cta h2 {
+  font-size: clamp(44px, 5vw, 75px);
+}
+
+.traditional-final-cta-content > p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.traditional-final-note {
+  display: block;
+  margin-top: 25px;
+  color: #85887e;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .traditional-section {
+    padding: 85px 5%;
+  }
+
+  .traditional-introduction {
+    gap: 45px;
+  }
+
+  .traditional-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .traditional-wellbeing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .traditional-wellbeing-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .traditional-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .traditional-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .traditional-countries-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .traditional-faq-layout {
+    gap: 45px;
+  }
+
+  .traditional-herbs-content {
+    padding: 65px 7%;
+  }
+
+  .traditional-heritage-inner {
+    gap: 45px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .traditional-section {
+    padding: 70px 6%;
+  }
+
+  .traditional-page h2 {
+    font-size: 43px;
+  }
+
+  .traditional-page p {
+    font-size: 13px;
+  }
+
+  /* HERO */
+
+  .traditional-hero {
+    min-height: 750px;
+    height: auto;
+  }
+
+  .traditional-hero-overlay {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(5, 9, 6, 0.97) 0%,
+        rgba(5, 9, 6, 0.84) 50%,
+        rgba(5, 9, 6, 0.4) 100%
+      );
+  }
+
+  .traditional-hero-content {
+    width: 88%;
+    margin: 0 auto;
+    padding: 120px 0 105px;
+  }
+
+  .traditional-hero h1 {
+    font-size: clamp(57px, 13vw, 80px);
+  }
+
+  .traditional-hero-subtitle {
+    font-size: 22px !important;
+  }
+
+  .traditional-hero-description {
+    font-size: 13px !important;
+  }
+
+  .traditional-hero-buttons {
+    flex-direction: column;
+  }
+
+  .traditional-hero-buttons .traditional-btn {
+    width: 100%;
+  }
+
+  .traditional-hero-features {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .traditional-hero-footer {
+    left: 6%;
+    right: 6%;
+    bottom: 20px;
+    font-size: 8px;
+    letter-spacing: 1.2px;
+  }
+
+  /* INTRO */
+
+  .traditional-introduction {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .traditional-intro-image {
+    height: 420px;
+  }
+
+  .traditional-image-caption {
+    left: -5px;
+    bottom: 20px;
+    padding: 17px;
+  }
+
+  .traditional-intro-content h2 {
+    font-size: 43px;
+  }
+
+  /* SERVICES */
+
+  .traditional-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .traditional-services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .traditional-service-card {
+    min-height: auto;
+    padding: 29px;
+  }
+
+  /* HERBS */
+
+  .traditional-herbs-section {
+    grid-template-columns: 1fr;
+  }
+
+  .traditional-herbs-image {
+    height: 400px;
+    min-height: 400px;
+  }
+
+  .traditional-herbs-content {
+    padding: 65px 6%;
+  }
+
+  /* WELLBEING */
+
+  .traditional-wellbeing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .traditional-wellbeing-card:last-child {
+    grid-column: auto;
+  }
+
+  .traditional-wellbeing-card {
+    height: 400px;
+  }
+
+  /* HERITAGE */
+
+  .traditional-heritage {
+    padding: 75px 6%;
+  }
+
+  .traditional-heritage-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .traditional-heritage-image {
+    height: 420px;
+  }
+
+  .traditional-heritage-quote blockquote {
+    font-size: 21px;
+  }
+
+  /* BANNER */
+
+  .traditional-banner {
+    min-height: 520px;
+    padding: 70px 6%;
+  }
+
+  .traditional-banner-content h2 {
+    font-size: 47px;
+  }
+
+  /* PROCESS */
+
+  .traditional-process-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .traditional-process-card {
+    padding: 28px;
+  }
+
+  /* VALUES */
+
+  .traditional-values {
+    padding: 75px 6%;
+  }
+
+  .traditional-values-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* COUNTRIES */
+
+  .traditional-countries-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .traditional-country-card {
+    padding: 20px;
+  }
+
+  /* FAQ */
+
+  .traditional-faq-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .traditional-faq-item summary {
+    font-size: 13px;
+    padding: 20px 0;
+  }
+
+  /* DISCLAIMER */
+
+  .traditional-disclaimer {
+    padding: 30px 6%;
+  }
+
+  .traditional-disclaimer-inner {
+    gap: 14px;
+  }
+
+  /* CTA */
+
+  .traditional-final-cta {
+    padding: 75px 6%;
+  }
+
+  .traditional-final-cta h2 {
+    font-size: 46px;
+  }
+
+  .traditional-final-cta .traditional-btn {
+    width: 100%;
+  }
+
+  .traditional-final-note {
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .traditional-hero h1 {
+    font-size: 55px;
+  }
+
+  .traditional-hero-content {
+    padding-top: 105px;
+  }
+
+  .traditional-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .traditional-page h2 {
+    font-size: 38px;
+  }
+
+  .traditional-intro-image {
+    height: 340px;
+  }
+
+  .traditional-herbs-image {
+    height: 330px;
+    min-height: 330px;
+  }
+
+  .traditional-wellbeing-card {
+    height: 350px;
+  }
+
+  .traditional-heritage-image {
+    height: 350px;
+  }
+
+  .traditional-banner-content h2 {
+    font-size: 40px;
+  }
+
+  .traditional-btn {
+    padding: 14px 17px;
+    font-size: 10px;
+  }
+}

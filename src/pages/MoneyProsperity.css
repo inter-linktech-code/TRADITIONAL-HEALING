@@ -1,0 +1,1269 @@
+
+/* =========================================================
+   ANCESTRAL WISDOM
+   MONEY & PROSPERITY PAGE
+   PREMIUM RESPONSIVE DESIGN
+   ========================================================= */
+
+.prosperity-page {
+  --prosperity-gold: #c9a45c;
+  --prosperity-gold-light: #e2c98e;
+  --prosperity-green: #14251c;
+  --prosperity-green-light: #1d3528;
+  --prosperity-dark: #080b09;
+  --prosperity-dark-soft: #101510;
+  --prosperity-white: #f5f3ed;
+  --prosperity-muted: #a9afa7;
+  --prosperity-border: rgba(201, 164, 92, 0.19);
+
+  background: var(--prosperity-dark);
+  color: var(--prosperity-white);
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+
+.prosperity-page *,
+.prosperity-page *::before,
+.prosperity-page *::after {
+  box-sizing: border-box;
+}
+
+.prosperity-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prosperity-page a {
+  text-decoration: none;
+}
+
+.prosperity-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.prosperity-section {
+  padding: 110px 0;
+}
+
+.prosperity-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--prosperity-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.prosperity-section-label::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: var(--prosperity-gold);
+}
+
+.prosperity-page h1,
+.prosperity-page h2,
+.prosperity-page h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.prosperity-page h2 {
+  font-size: clamp(38px, 4.3vw, 61px);
+  line-height: 1.08;
+  letter-spacing: -1.2px;
+}
+
+.prosperity-page h2 span,
+.prosperity-page h1 span {
+  color: var(--prosperity-gold-light);
+}
+
+.prosperity-page p {
+  color: var(--prosperity-muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.prosperity-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 54px;
+  padding: 15px 23px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  transition: 0.3s ease;
+}
+
+.prosperity-btn-gold {
+  background: var(--prosperity-gold);
+  color: #11150f !important;
+  border: 1px solid var(--prosperity-gold);
+}
+
+.prosperity-btn-gold:hover {
+  background: var(--prosperity-gold-light);
+  border-color: var(--prosperity-gold-light);
+  transform: translateY(-3px);
+}
+
+.prosperity-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff !important;
+}
+
+.prosperity-btn-outline:hover {
+  border-color: var(--prosperity-gold);
+  color: var(--prosperity-gold-light) !important;
+}
+
+.prosperity-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--prosperity-gold-light);
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.prosperity-text-link:hover {
+  gap: 15px;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.prosperity-hero {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  background: #080b09;
+}
+
+.prosperity-hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.prosperity-hero-image img {
+  object-position: center 45%;
+}
+
+.prosperity-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 6, 0.97) 0%,
+      rgba(5, 8, 6, 0.91) 38%,
+      rgba(5, 8, 6, 0.61) 67%,
+      rgba(5, 8, 6, 0.25) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.85),
+      transparent 40%
+    );
+}
+
+.prosperity-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 125px 0 100px;
+  max-width: 1180px;
+}
+
+.prosperity-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--prosperity-gold-light);
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.prosperity-hero h1 {
+  max-width: 780px;
+  font-size: clamp(54px, 7.5vw, 100px);
+  line-height: 0.98;
+  letter-spacing: -2px;
+  margin: 0 0 26px;
+  color: #fff;
+}
+
+.prosperity-hero-subtitle {
+  max-width: 660px;
+  color: #e7e5dc !important;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(23px, 2.6vw, 32px) !important;
+  line-height: 1.35 !important;
+  margin-bottom: 15px;
+}
+
+.prosperity-hero-description {
+  max-width: 590px;
+  color: #c3c8bf !important;
+  font-size: 15px !important;
+  line-height: 1.9 !important;
+}
+
+.prosperity-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.prosperity-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.prosperity-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d1d5cd;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.prosperity-hero-trust svg {
+  color: var(--prosperity-gold);
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.prosperity-intro {
+  background: var(--prosperity-dark-soft);
+}
+
+.prosperity-intro-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.prosperity-intro-image-wrap {
+  position: relative;
+  height: 570px;
+}
+
+.prosperity-intro-image {
+  object-position: center;
+}
+
+.prosperity-intro-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(201, 164, 92, 0.28);
+  pointer-events: none;
+}
+
+.prosperity-image-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(8, 11, 9, 0.86);
+  padding: 15px 19px;
+  color: var(--prosperity-gold-light);
+  font-size: 12px;
+}
+
+.prosperity-intro-copy h2 {
+  margin: 22px 0;
+}
+
+.prosperity-intro-copy h2 span {
+  display: block;
+}
+
+.prosperity-intro-copy p {
+  margin-bottom: 17px;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.prosperity-services {
+  background: #090d0a;
+}
+
+.prosperity-section-heading {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 58px;
+}
+
+.prosperity-section-heading .prosperity-section-label {
+  justify-content: center;
+}
+
+.prosperity-section-heading h2 {
+  margin: 20px 0;
+}
+
+.prosperity-section-heading p {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.prosperity-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.prosperity-service-card {
+  position: relative;
+  padding: 32px 29px;
+  min-height: 305px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(26, 43, 31, 0.8),
+      rgba(11, 15, 12, 0.95)
+    );
+  border: 1px solid rgba(201, 164, 92, 0.13);
+  transition: 0.35s ease;
+}
+
+.prosperity-service-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(201, 164, 92, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(31, 51, 37, 0.9),
+    rgba(12, 17, 13, 0.98)
+  );
+}
+
+.prosperity-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.prosperity-service-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--prosperity-gold);
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  background: rgba(201, 164, 92, 0.06);
+}
+
+.prosperity-card-number {
+  color: rgba(201, 164, 92, 0.45);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+
+.prosperity-service-card h3 {
+  color: #f4f0e7;
+  font-size: 27px;
+  line-height: 1.15;
+  margin-bottom: 13px;
+}
+
+.prosperity-service-card p {
+  font-size: 13px;
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.prosperity-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--prosperity-gold-light);
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.prosperity-card-link:hover {
+  gap: 13px;
+}
+
+/* =========================================================
+   BUSINESS
+   ========================================================= */
+
+.prosperity-business {
+  background: var(--prosperity-green);
+}
+
+.prosperity-business-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.prosperity-business-copy h2 {
+  margin: 22px 0;
+}
+
+.prosperity-business-copy p {
+  color: #c3ccc2;
+  margin-bottom: 17px;
+}
+
+.prosperity-check-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  margin: 28px 0 32px;
+}
+
+.prosperity-check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #e3e8df;
+  font-size: 13px;
+}
+
+.prosperity-check-list svg {
+  color: var(--prosperity-gold);
+  flex-shrink: 0;
+}
+
+.prosperity-business-image {
+  position: relative;
+  height: 600px;
+}
+
+.prosperity-business-image img {
+  object-position: center;
+}
+
+.prosperity-business-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(5, 9, 6, 0.75),
+    transparent 50%
+  );
+}
+
+.prosperity-business-image-overlay {
+  position: absolute;
+  bottom: 32px;
+  left: 30px;
+  right: 30px;
+  z-index: 2;
+}
+
+.prosperity-business-image-overlay span {
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 31px;
+}
+
+/* =========================================================
+   OPPORTUNITIES
+   ========================================================= */
+
+.prosperity-opportunity {
+  background: #0a0e0b;
+}
+
+.prosperity-opportunity-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.prosperity-opportunity-image {
+  height: 540px;
+  position: relative;
+}
+
+.prosperity-opportunity-image::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 90px;
+  height: 90px;
+  border-top: 1px solid var(--prosperity-gold);
+  border-left: 1px solid var(--prosperity-gold);
+  z-index: 2;
+}
+
+.prosperity-opportunity-copy h2 {
+  margin: 22px 0;
+}
+
+.prosperity-opportunity-copy p {
+  margin-bottom: 16px;
+}
+
+.prosperity-opportunity-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 32px 0 15px;
+}
+
+.prosperity-opportunity-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e0e5dc;
+  font-size: 12px;
+}
+
+.prosperity-opportunity-points svg {
+  color: var(--prosperity-gold);
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   FINANCIAL WELLBEING
+   ========================================================= */
+
+.prosperity-wellbeing {
+  background: #111812;
+}
+
+.prosperity-wellbeing-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.prosperity-wellbeing-image {
+  height: 540px;
+}
+
+.prosperity-wellbeing-image::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 90px;
+  height: 90px;
+  border-top: 1px solid var(--prosperity-gold);
+  border-left: 1px solid var(--prosperity-gold);
+  z-index: 2;
+}
+
+.prosperity-wellbeing-copy h2 {
+  margin: 22px 0;
+}
+
+.prosperity-wellbeing-copy p {
+  margin-bottom: 16px;
+}
+
+.prosperity-wellbeing-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 32px 0 15px;
+}
+
+.prosperity-wellbeing-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e0e5dc;
+  font-size: 12px;
+}
+
+.prosperity-wellbeing-points svg {
+  color: var(--prosperity-gold);
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   TRADITION
+   ========================================================= */
+
+.prosperity-tradition {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.prosperity-tradition-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.prosperity-tradition-bg img {
+  object-position: center 45%;
+}
+
+.prosperity-tradition-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 6, 0.96),
+      rgba(5, 8, 6, 0.73) 65%,
+      rgba(5, 8, 6, 0.45)
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.65),
+      transparent
+    );
+}
+
+.prosperity-tradition-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1180px;
+  padding: 100px 0;
+}
+
+.prosperity-tradition-content h2 {
+  font-size: clamp(42px, 5.5vw, 72px);
+  margin: 24px 0;
+}
+
+.prosperity-tradition-content p {
+  max-width: 630px;
+  color: #d1d4cb;
+  margin-bottom: 18px;
+}
+
+.prosperity-tradition-content .prosperity-btn {
+  margin-top: 20px;
+}
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.prosperity-process {
+  background: #111812;
+}
+
+.prosperity-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.prosperity-process-card {
+  padding: 30px 25px;
+  border: 1px solid rgba(201, 164, 92, 0.16);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.prosperity-process-number {
+  color: var(--prosperity-gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 39px;
+}
+
+.prosperity-process-line {
+  width: 42px;
+  height: 1px;
+  background: var(--prosperity-gold);
+  margin: 19px 0 25px;
+}
+
+.prosperity-process-card h3 {
+  color: #f2eee5;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 13px;
+}
+
+.prosperity-process-card p {
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   CONSULTATION
+   ========================================================= */
+
+.prosperity-consultation {
+  background: #090d0a;
+}
+
+.prosperity-consultation-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.prosperity-consultation-image {
+  height: 540px;
+}
+
+.prosperity-consultation-copy h2 {
+  margin: 22px 0;
+}
+
+.prosperity-consultation-copy p {
+  margin-bottom: 16px;
+}
+
+.prosperity-consultation-features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 28px 0;
+}
+
+.prosperity-consultation-features span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e0e5dc;
+  font-size: 12px;
+}
+
+.prosperity-consultation-features svg {
+  color: var(--prosperity-gold);
+}
+
+/* =========================================================
+   COUNTRIES
+   ========================================================= */
+
+.prosperity-countries {
+  background: var(--prosperity-green);
+}
+
+.prosperity-country-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.prosperity-country-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 150px;
+  padding: 25px 22px;
+  background: rgba(5, 9, 6, 0.3);
+  border: 1px solid rgba(201, 164, 92, 0.19);
+  color: #f0eee6;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.prosperity-country-grid a:hover {
+  background: rgba(201, 164, 92, 0.09);
+  border-color: var(--prosperity-gold);
+  transform: translateY(-4px);
+}
+
+.prosperity-country-grid a span {
+  color: var(--prosperity-gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+}
+
+.prosperity-country-grid a svg {
+  color: var(--prosperity-gold);
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.prosperity-faq {
+  background: #090d0a;
+}
+
+.prosperity-faq-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.prosperity-faq-intro {
+  position: sticky;
+  top: 110px;
+}
+
+.prosperity-faq-intro h2 {
+  margin: 22px 0;
+}
+
+.prosperity-faq-intro p {
+  margin-bottom: 20px;
+}
+
+.prosperity-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.prosperity-faq-item {
+  border: 1px solid rgba(201, 164, 92, 0.16);
+  background: rgba(255, 255, 255, 0.015);
+  transition: 0.3s ease;
+}
+
+.prosperity-faq-item[open] {
+  border-color: rgba(201, 164, 92, 0.42);
+}
+
+.prosperity-faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 24px;
+  cursor: pointer;
+  list-style: none;
+  color: #f0eee6;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  line-height: 1.3;
+}
+
+.prosperity-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.prosperity-faq-item summary svg {
+  flex-shrink: 0;
+  color: var(--prosperity-gold);
+  transition: transform 0.3s ease;
+}
+
+.prosperity-faq-item[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.prosperity-faq-answer {
+  padding: 0 24px 20px;
+}
+
+.prosperity-faq-answer p {
+  font-size: 13px;
+  margin: 0;
+}
+
+/* =========================================================
+   DISCLAIMER
+   ========================================================= */
+
+.prosperity-disclaimer {
+  padding: 35px 0;
+  background: #151c16;
+  border-top: 1px solid rgba(201, 164, 92, 0.15);
+  border-bottom: 1px solid rgba(201, 164, 92, 0.15);
+}
+
+.prosperity-disclaimer .prosperity-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.prosperity-disclaimer > .prosperity-container > svg {
+  flex-shrink: 0;
+  color: var(--prosperity-gold);
+  margin-top: 4px;
+}
+
+.prosperity-disclaimer h3 {
+  font-size: 23px;
+  color: #f3eee4;
+  margin-bottom: 10px;
+}
+
+.prosperity-disclaimer p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.prosperity-final-cta {
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.prosperity-final-cta-image {
+  position: absolute;
+  inset: 0;
+}
+
+.prosperity-final-cta-image img {
+  object-position: center;
+}
+
+.prosperity-final-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    rgba(5, 8, 6, 0.83),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.92),
+      rgba(5, 8, 6, 0.45)
+    );
+}
+
+.prosperity-final-cta-content {
+  position: relative;
+  z-index: 2;
+  padding: 90px 0;
+}
+
+.prosperity-final-cta-content .prosperity-section-label {
+  justify-content: center;
+}
+
+.prosperity-final-cta-content h2 {
+  font-size: clamp(46px, 6vw, 78px);
+  margin: 24px 0;
+}
+
+.prosperity-final-cta-content p {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  font-size: 15px;
+}
+
+.prosperity-final-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+  color: #c5c9c0;
+  font-size: 12px;
+}
+
+.prosperity-final-contact svg {
+  color: var(--prosperity-gold);
+}
+
+/* =========================================================
+   TABLETS
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .prosperity-section {
+    padding: 85px 0;
+  }
+
+  .prosperity-intro-grid,
+  .prosperity-business-grid,
+  .prosperity-opportunity-grid,
+  .prosperity-wellbeing-grid,
+  .prosperity-consultation-grid {
+    gap: 45px;
+  }
+
+  .prosperity-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prosperity-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prosperity-country-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .prosperity-faq-grid {
+    gap: 50px;
+  }
+
+  .prosperity-hero {
+    min-height: 650px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .prosperity-container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .prosperity-section {
+    padding: 70px 0;
+  }
+
+  .prosperity-hero {
+    min-height: 690px;
+    align-items: flex-end;
+  }
+
+  .prosperity-hero-image img {
+    object-position: 62% center;
+  }
+
+  .prosperity-hero-overlay {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(5, 8, 6, 0.98) 0%,
+        rgba(5, 8, 6, 0.9) 42%,
+        rgba(5, 8, 6, 0.4) 100%
+      );
+  }
+
+  .prosperity-hero-content {
+    width: calc(100% - 36px);
+    padding: 120px 0 55px;
+  }
+
+  .prosperity-hero h1 {
+    font-size: clamp(52px, 13vw, 76px);
+    letter-spacing: -1px;
+  }
+
+  .prosperity-hero-subtitle {
+    font-size: 23px !important;
+  }
+
+  .prosperity-hero-description {
+    font-size: 14px !important;
+  }
+
+  .prosperity-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .prosperity-btn {
+    width: 100%;
+  }
+
+  .prosperity-hero-trust {
+    gap: 13px 18px;
+    margin-top: 28px;
+  }
+
+  .prosperity-hero-trust span {
+    font-size: 10px;
+  }
+
+  .prosperity-intro-grid,
+  .prosperity-business-grid,
+  .prosperity-opportunity-grid,
+  .prosperity-wellbeing-grid,
+  .prosperity-consultation-grid,
+  .prosperity-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .prosperity-intro-image-wrap {
+    height: 430px;
+  }
+
+  .prosperity-intro-copy h2,
+  .prosperity-business-copy h2,
+  .prosperity-opportunity-copy h2,
+  .prosperity-wellbeing-copy h2,
+  .prosperity-consultation-copy h2 {
+    font-size: 42px;
+  }
+
+  .prosperity-services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .prosperity-service-card {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .prosperity-service-card h3 {
+    font-size: 27px;
+  }
+
+  .prosperity-business-image {
+    height: 420px;
+  }
+
+  .prosperity-opportunity-image {
+    height: 430px;
+  }
+
+  .prosperity-opportunity-image::before,
+  .prosperity-wellbeing-image::before {
+    top: -10px;
+    left: -10px;
+  }
+
+  .prosperity-opportunity-points,
+  .prosperity-wellbeing-points {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .prosperity-wellbeing-image {
+    height: 430px;
+  }
+
+  .prosperity-tradition {
+    min-height: 600px;
+  }
+
+  .prosperity-tradition-content {
+    padding: 80px 0;
+  }
+
+  .prosperity-tradition-content h2 {
+    font-size: 46px;
+  }
+
+  .prosperity-process-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .prosperity-process-card {
+    padding: 25px;
+  }
+
+  .prosperity-consultation-image {
+    height: 420px;
+  }
+
+  .prosperity-country-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .prosperity-country-grid a {
+    min-height: 130px;
+    padding: 20px 17px;
+    font-size: 13px;
+  }
+
+  .prosperity-faq-intro {
+    position: static;
+  }
+
+  .prosperity-faq-item summary {
+    padding: 18px;
+    font-size: 21px;
+  }
+
+  .prosperity-faq-answer {
+    padding: 0 18px 18px;
+  }
+
+  .prosperity-disclaimer .prosperity-container {
+    gap: 15px;
+  }
+
+  .prosperity-disclaimer h3 {
+    font-size: 21px;
+  }
+
+  .prosperity-disclaimer p {
+    font-size: 11px;
+  }
+
+  .prosperity-final-cta {
+    min-height: 510px;
+  }
+
+  .prosperity-final-cta-content h2 {
+    font-size: 48px;
+  }
+
+  .prosperity-final-contact {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+  .prosperity-hero h1 {
+    font-size: 49px;
+  }
+
+  .prosperity-section-heading h2 {
+    font-size: 38px;
+  }
+
+  .prosperity-country-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .prosperity-country-grid a {
+    padding: 17px 14px;
+  }
+
+  .prosperity-hero-trust {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prosperity-final-cta-content h2 {
+    font-size: 42px;
+  }
+}

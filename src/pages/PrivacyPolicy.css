@@ -1,0 +1,603 @@
+
+/* =========================================================
+   ANCESTRAL WISDOM
+   PREMIUM PRIVACY POLICY PAGE
+   ========================================================= */
+
+.aw-privacy {
+  --aw-black: #080b08;
+  --aw-forest: #101710;
+  --aw-forest-light: #182219;
+  --aw-gold: #c5a45c;
+  --aw-gold-light: #dfc68d;
+  --aw-cream: #f3eee3;
+  --aw-muted: #aaa99c;
+  --aw-border: rgba(197, 164, 92, 0.22);
+
+  width: 100%;
+  overflow: hidden;
+  background: var(--aw-black);
+  color: var(--aw-cream);
+  font-family: "DM Sans", sans-serif;
+}
+
+.aw-privacy * {
+  box-sizing: border-box;
+}
+
+.aw-privacy a {
+  text-decoration: none;
+}
+
+.aw-privacy-container {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.aw-privacy-hero {
+  min-height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(5, 9, 5, 0.96), rgba(5, 9, 5, 0.76)),
+    url("/src/assets/images/ancestral-spiritual-wisdom.jpg") center / cover no-repeat;
+}
+
+.aw-privacy-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    var(--aw-black),
+    transparent 35%,
+    rgba(8, 11, 8, 0.15)
+  );
+}
+
+.aw-privacy-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 85px;
+  padding-bottom: 75px;
+}
+
+.aw-privacy-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--aw-gold-light);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.aw-privacy-hero h1 {
+  margin: 22px 0 18px;
+  color: var(--aw-cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(55px, 7vw, 76px);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+}
+
+.aw-privacy-hero h1 span {
+  display: block;
+  color: var(--aw-gold-light);
+}
+
+.aw-privacy-hero-content > p {
+  max-width: 690px;
+  color: #cecec1;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.aw-privacy-updated {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 19px;
+  color: var(--aw-gold-light);
+  font-size: 11px;
+}
+
+.aw-privacy-updated svg {
+  color: var(--aw-gold);
+}
+
+/* INTRO */
+
+.aw-privacy-intro {
+  padding: 55px 0 30px;
+  background: var(--aw-black);
+}
+
+.aw-privacy-intro-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 30px;
+  background: var(--aw-forest);
+  border: 1px solid var(--aw-border);
+  border-left: 3px solid var(--aw-gold);
+}
+
+.aw-privacy-intro-icon {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  color: var(--aw-gold);
+  background: rgba(197, 164, 92, 0.1);
+}
+
+.aw-privacy-intro-card h2 {
+  margin: 0 0 10px;
+  color: var(--aw-cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.aw-privacy-intro-card p {
+  margin: 0;
+  color: var(--aw-muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* DOCUMENT LAYOUT */
+
+.aw-privacy-content-section {
+  padding: 65px 0 110px;
+  background: var(--aw-black);
+}
+
+.aw-privacy-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  align-items: start;
+  gap: 55px;
+}
+
+.aw-privacy-sidebar {
+  position: sticky;
+  top: 110px;
+}
+
+.aw-privacy-sidebar-inner {
+  padding: 25px 20px;
+  background: var(--aw-forest);
+  border: 1px solid var(--aw-border);
+}
+
+.aw-privacy-sidebar-inner > span {
+  display: block;
+  margin-bottom: 19px;
+  color: var(--aw-gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.aw-privacy-sidebar-inner a {
+  display: block;
+  padding: 11px 0;
+  color: #b7b8ac;
+  border-bottom: 1px solid rgba(197, 164, 92, 0.1);
+  font-size: 10px;
+  line-height: 1.5;
+  transition: 0.2s ease;
+}
+
+.aw-privacy-sidebar-inner a:last-child {
+  border-bottom: 0;
+}
+
+.aw-privacy-sidebar-inner a:hover {
+  padding-left: 5px;
+  color: var(--aw-gold-light);
+}
+
+.aw-privacy-document {
+  min-width: 0;
+}
+
+.aw-privacy-document-heading {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--aw-border);
+}
+
+.aw-privacy-document-heading h2 {
+  margin: 15px 0 10px;
+  color: var(--aw-cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.aw-privacy-document-heading > p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--aw-muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* POLICY SECTIONS */
+
+.aw-privacy-section {
+  position: relative;
+  padding: 38px 0;
+  border-bottom: 1px solid var(--aw-border);
+  scroll-margin-top: 110px;
+}
+
+.aw-privacy-section-number {
+  display: inline-block;
+  margin-bottom: 11px;
+  color: var(--aw-gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.aw-privacy-section h3 {
+  margin: 0 0 17px;
+  color: var(--aw-cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.aw-privacy-section h4 {
+  margin: 23px 0 9px;
+  color: var(--aw-gold-light);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aw-privacy-section p,
+.aw-privacy-section li {
+  color: #aaa99e;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.aw-privacy-section p {
+  margin: 0 0 15px;
+}
+
+.aw-privacy-section ul {
+  margin: 8px 0 20px;
+  padding-left: 22px;
+}
+
+.aw-privacy-section li {
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+.aw-privacy-section li::marker {
+  color: var(--aw-gold);
+}
+
+.aw-privacy-section a:not(.aw-privacy-contact-link) {
+  color: var(--aw-gold-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.aw-privacy-contact-link {
+  width: fit-content;
+  min-height: 48px;
+  margin-top: 12px;
+  padding: 0 17px;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: #11140e;
+  background: var(--aw-gold);
+  font-size: 11px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.aw-privacy-contact-link:hover {
+  background: var(--aw-gold-light);
+  transform: translateY(-2px);
+}
+
+.aw-privacy-document-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 35px;
+  padding: 23px;
+  background: var(--aw-forest);
+  border: 1px solid var(--aw-border);
+}
+
+.aw-privacy-document-footer svg {
+  flex-shrink: 0;
+  color: var(--aw-gold);
+}
+
+.aw-privacy-document-footer p {
+  margin: 0;
+  color: var(--aw-muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* VALUES */
+
+.aw-privacy-values {
+  padding: 95px 0;
+  background: var(--aw-forest);
+}
+
+.aw-privacy-section-heading {
+  max-width: 680px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.aw-privacy-section-heading h2 {
+  margin: 17px 0 12px;
+  color: var(--aw-cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(37px, 4.5vw, 50px);
+  font-weight: 500;
+}
+
+.aw-privacy-section-heading > p {
+  color: var(--aw-muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.aw-privacy-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.aw-privacy-value-card {
+  min-height: 205px;
+  padding: 30px;
+  background: #111a12;
+  border: 1px solid var(--aw-border);
+}
+
+.aw-privacy-value-card > svg {
+  color: var(--aw-gold);
+}
+
+.aw-privacy-value-card h3 {
+  margin: 18px 0 9px;
+  color: var(--aw-cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.aw-privacy-value-card p {
+  margin: 0;
+  color: var(--aw-muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* FINAL CTA */
+
+.aw-privacy-final {
+  position: relative;
+  padding: 95px 0;
+  text-align: center;
+  background:
+    url("/src/assets/images/traditional-spiritual-healer.jpg") center / cover no-repeat;
+}
+
+.aw-privacy-final-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 10, 5, 0.9);
+}
+
+.aw-privacy-final-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aw-privacy-final h2 {
+  max-width: 720px;
+  margin: 20px 0 12px;
+  color: var(--aw-cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(39px, 5vw, 58px);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.aw-privacy-final h2 span {
+  display: block;
+  color: var(--aw-gold-light);
+}
+
+.aw-privacy-final-content > p {
+  max-width: 550px;
+  margin: 0 0 25px;
+  color: #c1c2b6;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.aw-privacy-button {
+  min-height: 50px;
+  padding: 0 23px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #10140d;
+  background: var(--aw-gold);
+  font-size: 11px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.aw-privacy-button:hover {
+  background: var(--aw-gold-light);
+  transform: translateY(-3px);
+}
+
+.aw-privacy-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 27px;
+  margin-top: 35px;
+}
+
+.aw-privacy-bottom-links a {
+  color: #c1c2b6;
+  font-size: 11px;
+  transition: color 0.2s ease;
+}
+
+.aw-privacy-bottom-links a:hover {
+  color: var(--aw-gold-light);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .aw-privacy-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .aw-privacy-sidebar {
+    position: static;
+  }
+
+  .aw-privacy-sidebar-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .aw-privacy-sidebar-inner > span {
+    grid-column: 1 / -1;
+  }
+
+  .aw-privacy-values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .aw-privacy-container {
+    width: min(100% - 34px, 1160px);
+  }
+
+  .aw-privacy-hero {
+    min-height: 400px;
+  }
+
+  .aw-privacy-hero-content {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .aw-privacy-hero h1 {
+    font-size: 56px;
+  }
+
+  .aw-privacy-hero-content > p {
+    font-size: 12px;
+  }
+
+  .aw-privacy-intro {
+    padding-top: 35px;
+  }
+
+  .aw-privacy-intro-card {
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .aw-privacy-content-section {
+    padding: 45px 0 75px;
+  }
+
+  .aw-privacy-sidebar-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .aw-privacy-sidebar-inner > span {
+    grid-column: auto;
+  }
+
+  .aw-privacy-document-heading h2 {
+    font-size: 36px;
+  }
+
+  .aw-privacy-section {
+    padding: 30px 0;
+  }
+
+  .aw-privacy-section h3 {
+    font-size: 27px;
+  }
+
+  .aw-privacy-section p,
+  .aw-privacy-section li {
+    font-size: 11px;
+  }
+
+  .aw-privacy-values {
+    padding: 70px 0;
+  }
+
+  .aw-privacy-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aw-privacy-value-card {
+    min-height: auto;
+  }
+
+  .aw-privacy-final {
+    padding: 75px 0;
+  }
+
+  .aw-privacy-final h2 {
+    font-size: 43px;
+  }
+
+  .aw-privacy-bottom-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aw-privacy *,
+  .aw-privacy *::before,
+  .aw-privacy *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

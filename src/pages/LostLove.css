@@ -1,0 +1,1201 @@
+
+/* =========================================================
+   ANCESTRAL WISDOM
+   LOST LOVE & RECONCILIATION PAGE
+   PREMIUM RESPONSIVE DESIGN
+   ========================================================= */
+
+.lost-love-page {
+  --lost-gold: #c9a45c;
+  --lost-gold-light: #e2c98e;
+  --lost-green: #14251c;
+  --lost-green-light: #1d3528;
+  --lost-dark: #080b09;
+  --lost-dark-soft: #101510;
+  --lost-white: #f5f3ed;
+  --lost-muted: #a9afa7;
+  --lost-border: rgba(201, 164, 92, 0.19);
+
+  background: var(--lost-dark);
+  color: var(--lost-white);
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+
+.lost-love-page *,
+.lost-love-page *::before,
+.lost-love-page *::after {
+  box-sizing: border-box;
+}
+
+.lost-love-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lost-love-page a {
+  text-decoration: none;
+}
+
+.lost-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.lost-section {
+  padding: 110px 0;
+}
+
+.lost-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--lost-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.lost-section-label::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: var(--lost-gold);
+}
+
+.lost-love-page h1,
+.lost-love-page h2,
+.lost-love-page h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.lost-love-page h2 {
+  font-size: clamp(38px, 4.3vw, 61px);
+  line-height: 1.08;
+  letter-spacing: -1.2px;
+}
+
+.lost-love-page h2 span,
+.lost-love-page h1 span {
+  color: var(--lost-gold-light);
+}
+
+.lost-love-page p {
+  color: var(--lost-muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.lost-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 54px;
+  padding: 15px 23px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  transition: 0.3s ease;
+}
+
+.lost-btn-gold {
+  background: var(--lost-gold);
+  color: #11150f !important;
+  border: 1px solid var(--lost-gold);
+}
+
+.lost-btn-gold:hover {
+  background: var(--lost-gold-light);
+  border-color: var(--lost-gold-light);
+  transform: translateY(-3px);
+}
+
+.lost-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff !important;
+}
+
+.lost-btn-outline:hover {
+  border-color: var(--lost-gold);
+  color: var(--lost-gold-light) !important;
+}
+
+.lost-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--lost-gold-light);
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.lost-text-link:hover {
+  gap: 15px;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.lost-hero {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  background: #080b09;
+}
+
+.lost-hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.lost-hero-image img {
+  object-position: center 40%;
+}
+
+.lost-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 6, 0.97) 0%,
+      rgba(5, 8, 6, 0.91) 38%,
+      rgba(5, 8, 6, 0.61) 67%,
+      rgba(5, 8, 6, 0.25) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.85),
+      transparent 40%
+    );
+}
+
+.lost-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 125px 0 100px;
+  max-width: 1180px;
+}
+
+.lost-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--lost-gold-light);
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.lost-hero h1 {
+  max-width: 780px;
+  font-size: clamp(54px, 7.5vw, 100px);
+  line-height: 0.98;
+  letter-spacing: -2px;
+  margin: 0 0 26px;
+  color: #fff;
+}
+
+.lost-hero-subtitle {
+  max-width: 660px;
+  color: #e7e5dc !important;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(23px, 2.6vw, 32px) !important;
+  line-height: 1.35 !important;
+  margin-bottom: 15px;
+}
+
+.lost-hero-description {
+  max-width: 590px;
+  color: #c3c8bf !important;
+  font-size: 15px !important;
+  line-height: 1.9 !important;
+}
+
+.lost-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.lost-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.lost-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d1d5cd;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.lost-hero-trust svg {
+  color: var(--lost-gold);
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.lost-intro {
+  background: var(--lost-dark-soft);
+}
+
+.lost-intro-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.lost-intro-image-wrap {
+  position: relative;
+  height: 570px;
+}
+
+.lost-intro-image {
+  object-position: center;
+}
+
+.lost-intro-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(201, 164, 92, 0.28);
+  pointer-events: none;
+}
+
+.lost-image-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(8, 11, 9, 0.86);
+  padding: 15px 19px;
+  color: var(--lost-gold-light);
+  font-size: 12px;
+}
+
+.lost-intro-copy h2 {
+  margin: 22px 0;
+}
+
+.lost-intro-copy h2 span {
+  display: block;
+}
+
+.lost-intro-copy p {
+  margin-bottom: 17px;
+}
+
+/* =========================================================
+   SERVICES GRID
+   ========================================================= */
+
+.lost-services {
+  background: #090d0a;
+}
+
+.lost-section-heading {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 58px;
+}
+
+.lost-section-heading .lost-section-label {
+  justify-content: center;
+}
+
+.lost-section-heading h2 {
+  margin: 20px 0;
+}
+
+.lost-section-heading p {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.lost-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lost-service-card {
+  position: relative;
+  padding: 32px 29px;
+  min-height: 305px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(26, 43, 31, 0.8),
+      rgba(11, 15, 12, 0.95)
+    );
+  border: 1px solid rgba(201, 164, 92, 0.13);
+  transition: 0.35s ease;
+}
+
+.lost-service-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(201, 164, 92, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(31, 51, 37, 0.9),
+    rgba(12, 17, 13, 0.98)
+  );
+}
+
+.lost-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.lost-service-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lost-gold);
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  background: rgba(201, 164, 92, 0.06);
+}
+
+.lost-card-number {
+  color: rgba(201, 164, 92, 0.45);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+
+.lost-service-card h3 {
+  color: #f4f0e7;
+  font-size: 27px;
+  line-height: 1.15;
+  margin-bottom: 13px;
+}
+
+.lost-service-card p {
+  font-size: 13px;
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.lost-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--lost-gold-light);
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.lost-card-link:hover {
+  gap: 13px;
+}
+
+/* =========================================================
+   RECONCILIATION
+   ========================================================= */
+
+.lost-reconciliation {
+  background: var(--lost-green);
+}
+
+.lost-reconciliation-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.lost-reconciliation-copy h2 {
+  margin: 22px 0;
+}
+
+.lost-reconciliation-copy p {
+  color: #c3ccc2;
+  margin-bottom: 17px;
+}
+
+.lost-check-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  margin: 28px 0 32px;
+}
+
+.lost-check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #e3e8df;
+  font-size: 13px;
+}
+
+.lost-check-list svg {
+  color: var(--lost-gold);
+  flex-shrink: 0;
+}
+
+.lost-reconciliation-image {
+  position: relative;
+  height: 600px;
+}
+
+.lost-reconciliation-image img {
+  object-position: center;
+}
+
+.lost-reconciliation-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(5, 9, 6, 0.75),
+    transparent 50%
+  );
+}
+
+.lost-reconciliation-image-overlay {
+  position: absolute;
+  bottom: 32px;
+  left: 30px;
+  right: 30px;
+  z-index: 2;
+}
+
+.lost-reconciliation-image-overlay span {
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 31px;
+}
+
+/* =========================================================
+   HEALING
+   ========================================================= */
+
+.lost-healing {
+  background: #0a0e0b;
+}
+
+.lost-healing-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.lost-healing-image {
+  height: 540px;
+  position: relative;
+}
+
+.lost-healing-image::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 90px;
+  height: 90px;
+  border-top: 1px solid var(--lost-gold);
+  border-left: 1px solid var(--lost-gold);
+  z-index: 2;
+}
+
+.lost-healing-copy h2 {
+  margin: 22px 0;
+}
+
+.lost-healing-copy p {
+  margin-bottom: 16px;
+}
+
+.lost-healing-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 32px 0 15px;
+}
+
+.lost-healing-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e0e5dc;
+  font-size: 12px;
+}
+
+.lost-healing-points svg {
+  color: var(--lost-gold);
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   TRADITIONAL WISDOM
+   ========================================================= */
+
+.lost-tradition {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.lost-tradition-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.lost-tradition-bg img {
+  object-position: center 45%;
+}
+
+.lost-tradition-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 6, 0.96),
+      rgba(5, 8, 6, 0.73) 65%,
+      rgba(5, 8, 6, 0.45)
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.65),
+      transparent
+    );
+}
+
+.lost-tradition-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1180px;
+  padding: 100px 0;
+}
+
+.lost-tradition-content h2 {
+  font-size: clamp(42px, 5.5vw, 72px);
+  margin: 24px 0;
+}
+
+.lost-tradition-content p {
+  max-width: 630px;
+  color: #d1d4cb;
+  margin-bottom: 18px;
+}
+
+.lost-tradition-content .lost-btn {
+  margin-top: 20px;
+}
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.lost-process {
+  background: #111812;
+}
+
+.lost-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.lost-process-card {
+  padding: 30px 25px;
+  border: 1px solid rgba(201, 164, 92, 0.16);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.lost-process-number {
+  color: var(--lost-gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 39px;
+}
+
+.lost-process-line {
+  width: 42px;
+  height: 1px;
+  background: var(--lost-gold);
+  margin: 19px 0 25px;
+}
+
+.lost-process-card h3 {
+  color: #f2eee5;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 13px;
+}
+
+.lost-process-card p {
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   PRIVATE CONSULTATION
+   ========================================================= */
+
+.lost-consultation {
+  background: #090d0a;
+}
+
+.lost-consultation-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.lost-consultation-image {
+  height: 540px;
+}
+
+.lost-consultation-copy h2 {
+  margin: 22px 0;
+}
+
+.lost-consultation-copy p {
+  margin-bottom: 16px;
+}
+
+.lost-consultation-features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 28px 0;
+}
+
+.lost-consultation-features span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e0e5dc;
+  font-size: 12px;
+}
+
+.lost-consultation-features svg {
+  color: var(--lost-gold);
+}
+
+/* =========================================================
+   COUNTRIES
+   ========================================================= */
+
+.lost-countries {
+  background: var(--lost-green);
+}
+
+.lost-country-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.lost-country-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 150px;
+  padding: 25px 22px;
+  background: rgba(5, 9, 6, 0.3);
+  border: 1px solid rgba(201, 164, 92, 0.19);
+  color: #f0eee6;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.lost-country-grid a:hover {
+  background: rgba(201, 164, 92, 0.09);
+  border-color: var(--lost-gold);
+  transform: translateY(-4px);
+}
+
+.lost-country-grid a span {
+  color: var(--lost-gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+}
+
+.lost-country-grid a svg {
+  color: var(--lost-gold);
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.lost-faq {
+  background: #090d0a;
+}
+
+.lost-faq-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.lost-faq-intro {
+  position: sticky;
+  top: 110px;
+}
+
+.lost-faq-intro h2 {
+  margin: 22px 0;
+}
+
+.lost-faq-intro p {
+  margin-bottom: 20px;
+}
+
+.lost-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lost-faq-item {
+  border: 1px solid rgba(201, 164, 92, 0.16);
+  background: rgba(255, 255, 255, 0.015);
+  transition: 0.3s ease;
+}
+
+.lost-faq-item[open] {
+  border-color: rgba(201, 164, 92, 0.42);
+}
+
+.lost-faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 24px;
+  cursor: pointer;
+  list-style: none;
+  color: #f0eee6;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  line-height: 1.3;
+}
+
+.lost-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.lost-faq-item summary svg {
+  flex-shrink: 0;
+  color: var(--lost-gold);
+  transition: transform 0.3s ease;
+}
+
+.lost-faq-item[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.lost-faq-answer {
+  padding: 0 24px 20px;
+}
+
+.lost-faq-answer p {
+  font-size: 13px;
+  margin: 0;
+}
+
+/* =========================================================
+   DISCLAIMER
+   ========================================================= */
+
+.lost-disclaimer {
+  padding: 35px 0;
+  background: #151c16;
+  border-top: 1px solid rgba(201, 164, 92, 0.15);
+  border-bottom: 1px solid rgba(201, 164, 92, 0.15);
+}
+
+.lost-disclaimer .lost-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.lost-disclaimer > .lost-container > svg {
+  flex-shrink: 0;
+  color: var(--lost-gold);
+  margin-top: 4px;
+}
+
+.lost-disclaimer h3 {
+  font-size: 23px;
+  color: #f3eee4;
+  margin-bottom: 10px;
+}
+
+.lost-disclaimer p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.lost-final-cta {
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.lost-final-cta-image {
+  position: absolute;
+  inset: 0;
+}
+
+.lost-final-cta-image img {
+  object-position: center;
+}
+
+.lost-final-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    rgba(5, 8, 6, 0.83),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.92),
+      rgba(5, 8, 6, 0.45)
+    );
+}
+
+.lost-final-cta-content {
+  position: relative;
+  z-index: 2;
+  padding: 90px 0;
+}
+
+.lost-final-cta-content .lost-section-label {
+  justify-content: center;
+}
+
+.lost-final-cta-content h2 {
+  font-size: clamp(46px, 6vw, 78px);
+  margin: 24px 0;
+}
+
+.lost-final-cta-content p {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  font-size: 15px;
+}
+
+.lost-final-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+  color: #c5c9c0;
+  font-size: 12px;
+}
+
+.lost-final-contact svg {
+  color: var(--lost-gold);
+}
+
+/* =========================================================
+   TABLETS
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .lost-section {
+    padding: 85px 0;
+  }
+
+  .lost-intro-grid,
+  .lost-reconciliation-grid,
+  .lost-healing-grid,
+  .lost-consultation-grid {
+    gap: 45px;
+  }
+
+  .lost-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lost-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lost-country-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lost-faq-grid {
+    gap: 50px;
+  }
+
+  .lost-hero {
+    min-height: 650px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .lost-container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .lost-section {
+    padding: 70px 0;
+  }
+
+  .lost-hero {
+    min-height: 690px;
+    align-items: flex-end;
+  }
+
+  .lost-hero-image img {
+    object-position: 62% center;
+  }
+
+  .lost-hero-overlay {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(5, 8, 6, 0.98) 0%,
+        rgba(5, 8, 6, 0.9) 42%,
+        rgba(5, 8, 6, 0.4) 100%
+      );
+  }
+
+  .lost-hero-content {
+    width: calc(100% - 36px);
+    padding: 120px 0 55px;
+  }
+
+  .lost-hero h1 {
+    font-size: clamp(52px, 13vw, 76px);
+    letter-spacing: -1px;
+  }
+
+  .lost-hero-subtitle {
+    font-size: 23px !important;
+  }
+
+  .lost-hero-description {
+    font-size: 14px !important;
+  }
+
+  .lost-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lost-btn {
+    width: 100%;
+  }
+
+  .lost-hero-trust {
+    gap: 13px 18px;
+    margin-top: 28px;
+  }
+
+  .lost-hero-trust span {
+    font-size: 10px;
+  }
+
+  .lost-intro-grid,
+  .lost-reconciliation-grid,
+  .lost-healing-grid,
+  .lost-consultation-grid,
+  .lost-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .lost-intro-image-wrap {
+    height: 430px;
+  }
+
+  .lost-intro-copy h2,
+  .lost-reconciliation-copy h2,
+  .lost-healing-copy h2,
+  .lost-consultation-copy h2 {
+    font-size: 42px;
+  }
+
+  .lost-services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .lost-service-card {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .lost-service-card h3 {
+    font-size: 27px;
+  }
+
+  .lost-reconciliation-image {
+    height: 420px;
+  }
+
+  .lost-healing-image {
+    height: 430px;
+  }
+
+  .lost-healing-image::before {
+    top: -10px;
+    left: -10px;
+  }
+
+  .lost-healing-points {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .lost-tradition {
+    min-height: 600px;
+  }
+
+  .lost-tradition-content {
+    padding: 80px 0;
+  }
+
+  .lost-tradition-content h2 {
+    font-size: 46px;
+  }
+
+  .lost-process-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .lost-process-card {
+    padding: 25px;
+  }
+
+  .lost-consultation-image {
+    height: 420px;
+  }
+
+  .lost-country-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .lost-country-grid a {
+    min-height: 130px;
+    padding: 20px 17px;
+    font-size: 13px;
+  }
+
+  .lost-faq-intro {
+    position: static;
+  }
+
+  .lost-faq-item summary {
+    padding: 18px;
+    font-size: 21px;
+  }
+
+  .lost-faq-answer {
+    padding: 0 18px 18px;
+  }
+
+  .lost-disclaimer .lost-container {
+    gap: 15px;
+  }
+
+  .lost-disclaimer h3 {
+    font-size: 21px;
+  }
+
+  .lost-disclaimer p {
+    font-size: 11px;
+  }
+
+  .lost-final-cta {
+    min-height: 510px;
+  }
+
+  .lost-final-cta-content h2 {
+    font-size: 48px;
+  }
+
+  .lost-final-contact {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+  .lost-hero h1 {
+    font-size: 49px;
+  }
+
+  .lost-section-heading h2 {
+    font-size: 38px;
+  }
+
+  .lost-country-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lost-country-grid a {
+    padding: 17px 14px;
+  }
+
+  .lost-hero-trust {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lost-final-cta-content h2 {
+    font-size: 42px;
+  }
+}

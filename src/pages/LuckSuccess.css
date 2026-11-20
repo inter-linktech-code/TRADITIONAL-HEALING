@@ -1,0 +1,1272 @@
+
+/* =========================================================
+   ANCESTRAL WISDOM
+   LUCK & SUCCESS PAGE
+   PREMIUM RESPONSIVE STYLING
+   ========================================================= */
+
+.luck-page {
+  --luck-gold: #c9a45c;
+  --luck-gold-light: #e2c98e;
+  --luck-green: #14251c;
+  --luck-green-light: #1d3528;
+  --luck-dark: #080b09;
+  --luck-dark-soft: #101510;
+  --luck-white: #f5f3ed;
+  --luck-muted: #a9afa7;
+  --luck-border: rgba(201, 164, 92, 0.19);
+
+  background: var(--luck-dark);
+  color: var(--luck-white);
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+
+.luck-page *,
+.luck-page *::before,
+.luck-page *::after {
+  box-sizing: border-box;
+}
+
+.luck-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.luck-page a {
+  text-decoration: none;
+}
+
+.luck-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.luck-section {
+  padding: 110px 0;
+}
+
+.luck-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--luck-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.luck-section-label::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: var(--luck-gold);
+}
+
+.luck-page h1,
+.luck-page h2,
+.luck-page h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.luck-page h2 {
+  font-size: clamp(38px, 4.3vw, 61px);
+  line-height: 1.08;
+  letter-spacing: -1.2px;
+}
+
+.luck-page h2 span,
+.luck-page h1 span {
+  color: var(--luck-gold-light);
+}
+
+.luck-page p {
+  color: var(--luck-muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.luck-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 54px;
+  padding: 15px 23px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  transition: 0.3s ease;
+}
+
+.luck-btn-gold {
+  background: var(--luck-gold);
+  color: #11150f !important;
+  border: 1px solid var(--luck-gold);
+}
+
+.luck-btn-gold:hover {
+  background: var(--luck-gold-light);
+  border-color: var(--luck-gold-light);
+  transform: translateY(-3px);
+}
+
+.luck-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff !important;
+}
+
+.luck-btn-outline:hover {
+  border-color: var(--luck-gold);
+  color: var(--luck-gold-light) !important;
+}
+
+.luck-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--luck-gold-light);
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.luck-text-link:hover {
+  gap: 15px;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.luck-hero {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  background: #080b09;
+}
+
+.luck-hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.luck-hero-image img {
+  object-position: center 45%;
+}
+
+.luck-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 6, 0.97) 0%,
+      rgba(5, 8, 6, 0.91) 38%,
+      rgba(5, 8, 6, 0.61) 67%,
+      rgba(5, 8, 6, 0.25) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.85),
+      transparent 40%
+    );
+}
+
+.luck-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 125px 0 100px;
+}
+
+.luck-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--luck-gold-light);
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.luck-hero h1 {
+  max-width: 780px;
+  font-size: clamp(54px, 7.5vw, 100px);
+  line-height: 0.98;
+  letter-spacing: -2px;
+  margin: 0 0 26px;
+  color: #fff;
+}
+
+.luck-hero-subtitle {
+  max-width: 660px;
+  color: #e7e5dc !important;
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: clamp(23px, 2.6vw, 32px) !important;
+  line-height: 1.35 !important;
+  font-weight: 400 !important;
+  margin-bottom: 15px;
+}
+
+.luck-hero-description {
+  max-width: 590px;
+  color: #c3c8bf !important;
+  font-size: 15px !important;
+  line-height: 1.9 !important;
+}
+
+.luck-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.luck-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.luck-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d1d5cd;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.luck-hero-trust svg {
+  color: var(--luck-gold);
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.luck-intro {
+  background: var(--luck-dark-soft);
+}
+
+.luck-intro-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.luck-intro-image-wrap {
+  position: relative;
+  height: 570px;
+}
+
+.luck-intro-image {
+  object-position: center;
+}
+
+.luck-intro-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(201, 164, 92, 0.28);
+  pointer-events: none;
+}
+
+.luck-image-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(8, 11, 9, 0.86);
+  padding: 15px 19px;
+  color: var(--luck-gold-light);
+  font-size: 12px;
+}
+
+.luck-intro-copy h2 {
+  margin: 22px 0;
+}
+
+.luck-intro-copy h2 span {
+  display: block;
+}
+
+.luck-intro-copy p {
+  margin-bottom: 17px;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.luck-services {
+  background: #090d0a;
+}
+
+.luck-section-heading {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 58px;
+}
+
+.luck-section-heading .luck-section-label {
+  justify-content: center;
+}
+
+.luck-section-heading h2 {
+  margin: 20px 0;
+}
+
+.luck-section-heading p {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.luck-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.luck-service-card {
+  position: relative;
+  padding: 32px 29px;
+  min-height: 305px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(26, 43, 31, 0.8),
+      rgba(11, 15, 12, 0.95)
+    );
+  border: 1px solid rgba(201, 164, 92, 0.13);
+  transition: 0.35s ease;
+}
+
+.luck-service-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(201, 164, 92, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(31, 51, 37, 0.9),
+    rgba(12, 17, 13, 0.98)
+  );
+}
+
+.luck-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.luck-service-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--luck-gold);
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  background: rgba(201, 164, 92, 0.06);
+}
+
+.luck-card-number {
+  color: rgba(201, 164, 92, 0.45);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+
+.luck-service-card h3 {
+  color: #f4f0e7;
+  font-size: 27px;
+  line-height: 1.15;
+  margin-bottom: 13px;
+}
+
+.luck-service-card p {
+  font-size: 13px;
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.luck-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--luck-gold-light);
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.luck-card-link:hover {
+  gap: 13px;
+}
+
+/* =========================================================
+   OPPORTUNITIES
+   ========================================================= */
+
+.luck-opportunities {
+  background: var(--luck-green);
+}
+
+.luck-opportunities-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.luck-opportunities-copy h2 {
+  margin: 22px 0;
+}
+
+.luck-opportunities-copy p {
+  color: #c3ccc2;
+  margin-bottom: 17px;
+}
+
+.luck-opportunities-image {
+  position: relative;
+  height: 600px;
+}
+
+.luck-opportunities-image img {
+  object-position: center;
+}
+
+.luck-opportunities-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(201, 164, 92, 0.2);
+  pointer-events: none;
+}
+
+.luck-opportunity-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 32px 0;
+}
+
+.luck-opportunity-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e0e5dc;
+  font-size: 12px;
+}
+
+.luck-opportunity-points svg {
+  color: var(--luck-gold);
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   OBSTACLES
+   ========================================================= */
+
+.luck-obstacles {
+  background: #0a0e0b;
+}
+
+.luck-obstacles-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.luck-obstacles-image {
+  position: relative;
+  height: 540px;
+}
+
+.luck-obstacles-image::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 90px;
+  height: 90px;
+  border-top: 1px solid var(--luck-gold);
+  border-left: 1px solid var(--luck-gold);
+  z-index: 2;
+}
+
+.luck-obstacles-copy h2 {
+  margin: 22px 0;
+}
+
+.luck-obstacles-copy p {
+  margin-bottom: 16px;
+}
+
+.luck-obstacles-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 30px 0 15px;
+}
+
+.luck-obstacles-features span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e0e5dc;
+  font-size: 12px;
+}
+
+.luck-obstacles-features svg {
+  color: var(--luck-gold);
+}
+
+/* =========================================================
+   CAREER & SUCCESS
+   ========================================================= */
+
+.luck-career {
+  background: #111812;
+}
+
+.luck-career-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.luck-career-copy h2 {
+  margin: 22px 0;
+}
+
+.luck-career-copy p {
+  margin-bottom: 17px;
+}
+
+.luck-check-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  margin: 28px 0 32px;
+}
+
+.luck-check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #e3e8df;
+  font-size: 13px;
+}
+
+.luck-check-list svg {
+  color: var(--luck-gold);
+  flex-shrink: 0;
+}
+
+.luck-career-image {
+  position: relative;
+  height: 600px;
+}
+
+.luck-career-image img {
+  object-position: center;
+}
+
+.luck-career-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(5, 9, 6, 0.75),
+    transparent 50%
+  );
+}
+
+.luck-career-image-caption {
+  position: absolute;
+  bottom: 32px;
+  left: 30px;
+  right: 30px;
+  z-index: 2;
+}
+
+.luck-career-image-caption span {
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 31px;
+}
+
+/* =========================================================
+   TRADITION
+   ========================================================= */
+
+.luck-tradition {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.luck-tradition-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.luck-tradition-bg img {
+  object-position: center 45%;
+}
+
+.luck-tradition-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 6, 0.96),
+      rgba(5, 8, 6, 0.73) 65%,
+      rgba(5, 8, 6, 0.45)
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.65),
+      transparent
+    );
+}
+
+.luck-tradition-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1180px;
+  padding: 100px 0;
+}
+
+.luck-tradition-content h2 {
+  font-size: clamp(42px, 5.5vw, 72px);
+  margin: 24px 0;
+}
+
+.luck-tradition-content p {
+  max-width: 630px;
+  color: #d1d4cb;
+  margin-bottom: 18px;
+}
+
+.luck-tradition-content .luck-btn {
+  margin-top: 20px;
+}
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.luck-process {
+  background: #111812;
+}
+
+.luck-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.luck-process-card {
+  padding: 30px 25px;
+  border: 1px solid rgba(201, 164, 92, 0.16);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.luck-process-number {
+  color: var(--luck-gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 39px;
+}
+
+.luck-process-line {
+  width: 42px;
+  height: 1px;
+  background: var(--luck-gold);
+  margin: 19px 0 25px;
+}
+
+.luck-process-card h3 {
+  color: #f2eee5;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 13px;
+}
+
+.luck-process-card p {
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   CONSULTATION
+   ========================================================= */
+
+.luck-consultation {
+  background: #090d0a;
+}
+
+.luck-consultation-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.luck-consultation-image {
+  height: 540px;
+}
+
+.luck-consultation-copy h2 {
+  margin: 22px 0;
+}
+
+.luck-consultation-copy p {
+  margin-bottom: 16px;
+}
+
+.luck-consultation-features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 28px 0;
+}
+
+.luck-consultation-features span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e0e5dc;
+  font-size: 12px;
+}
+
+.luck-consultation-features svg {
+  color: var(--luck-gold);
+}
+
+/* =========================================================
+   COUNTRIES
+   ========================================================= */
+
+.luck-countries {
+  background: var(--luck-green);
+}
+
+.luck-country-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.luck-country-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 150px;
+  padding: 25px 22px;
+  background: rgba(5, 9, 6, 0.3);
+  border: 1px solid rgba(201, 164, 92, 0.19);
+  color: #f0eee6;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.luck-country-grid a:hover {
+  background: rgba(201, 164, 92, 0.09);
+  border-color: var(--luck-gold);
+  transform: translateY(-4px);
+}
+
+.luck-country-grid a span {
+  color: var(--luck-gold);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+}
+
+.luck-country-grid a svg {
+  color: var(--luck-gold);
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.luck-faq {
+  background: #090d0a;
+}
+
+.luck-faq-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.luck-faq-intro {
+  position: sticky;
+  top: 110px;
+}
+
+.luck-faq-intro h2 {
+  margin: 22px 0;
+}
+
+.luck-faq-intro p {
+  margin-bottom: 20px;
+}
+
+.luck-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.luck-faq-item {
+  border: 1px solid rgba(201, 164, 92, 0.16);
+  background: rgba(255, 255, 255, 0.015);
+  transition: 0.3s ease;
+}
+
+.luck-faq-item[open] {
+  border-color: rgba(201, 164, 92, 0.42);
+}
+
+.luck-faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 24px;
+  cursor: pointer;
+  list-style: none;
+  color: #f0eee6;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  line-height: 1.3;
+}
+
+.luck-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.luck-faq-item summary svg {
+  flex-shrink: 0;
+  color: var(--luck-gold);
+  transition: transform 0.3s ease;
+}
+
+.luck-faq-item[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.luck-faq-answer {
+  padding: 0 24px 20px;
+}
+
+.luck-faq-answer p {
+  font-size: 13px;
+  margin: 0;
+}
+
+/* =========================================================
+   DISCLAIMER
+   ========================================================= */
+
+.luck-disclaimer {
+  padding: 35px 0;
+  background: #151c16;
+  border-top: 1px solid rgba(201, 164, 92, 0.15);
+  border-bottom: 1px solid rgba(201, 164, 92, 0.15);
+}
+
+.luck-disclaimer .luck-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.luck-disclaimer > .luck-container > svg {
+  flex-shrink: 0;
+  color: var(--luck-gold);
+  margin-top: 4px;
+}
+
+.luck-disclaimer h3 {
+  font-size: 23px;
+  color: #f3eee4;
+  margin-bottom: 10px;
+}
+
+.luck-disclaimer p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.luck-final-cta {
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.luck-final-cta-image {
+  position: absolute;
+  inset: 0;
+}
+
+.luck-final-cta-image img {
+  object-position: center;
+}
+
+.luck-final-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    rgba(5, 8, 6, 0.83),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 6, 0.92),
+      rgba(5, 8, 6, 0.45)
+    );
+}
+
+.luck-final-cta-content {
+  position: relative;
+  z-index: 2;
+  padding: 90px 0;
+}
+
+.luck-final-cta-content .luck-section-label {
+  justify-content: center;
+}
+
+.luck-final-cta-content h2 {
+  font-size: clamp(46px, 6vw, 78px);
+  margin: 24px 0;
+}
+
+.luck-final-cta-content p {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  font-size: 15px;
+}
+
+.luck-final-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+  color: #c5c9c0;
+  font-size: 12px;
+}
+
+.luck-final-contact svg {
+  color: var(--luck-gold);
+}
+
+/* =========================================================
+   TABLETS
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .luck-section {
+    padding: 85px 0;
+  }
+
+  .luck-intro-grid,
+  .luck-opportunities-grid,
+  .luck-obstacles-grid,
+  .luck-career-grid,
+  .luck-consultation-grid {
+    gap: 45px;
+  }
+
+  .luck-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .luck-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .luck-country-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .luck-faq-grid {
+    gap: 50px;
+  }
+
+  .luck-hero {
+    min-height: 650px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .luck-container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .luck-section {
+    padding: 70px 0;
+  }
+
+  .luck-hero {
+    min-height: 690px;
+    align-items: flex-end;
+  }
+
+  .luck-hero-image img {
+    object-position: 62% center;
+  }
+
+  .luck-hero-overlay {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(5, 8, 6, 0.98) 0%,
+        rgba(5, 8, 6, 0.9) 42%,
+        rgba(5, 8, 6, 0.4) 100%
+      );
+  }
+
+  .luck-hero-content {
+    width: calc(100% - 36px);
+    padding: 120px 0 55px;
+  }
+
+  .luck-hero h1 {
+    font-size: clamp(52px, 13vw, 76px);
+    letter-spacing: -1px;
+  }
+
+  .luck-hero-subtitle {
+    font-size: 23px !important;
+  }
+
+  .luck-hero-description {
+    font-size: 14px !important;
+  }
+
+  .luck-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .luck-btn {
+    width: 100%;
+  }
+
+  .luck-hero-trust {
+    gap: 13px 18px;
+    margin-top: 28px;
+  }
+
+  .luck-hero-trust span {
+    font-size: 10px;
+  }
+
+  .luck-intro-grid,
+  .luck-opportunities-grid,
+  .luck-obstacles-grid,
+  .luck-career-grid,
+  .luck-consultation-grid,
+  .luck-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .luck-intro-image-wrap {
+    height: 430px;
+  }
+
+  .luck-intro-copy h2,
+  .luck-opportunities-copy h2,
+  .luck-obstacles-copy h2,
+  .luck-career-copy h2,
+  .luck-consultation-copy h2 {
+    font-size: 42px;
+  }
+
+  .luck-services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .luck-service-card {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .luck-service-card h3 {
+    font-size: 27px;
+  }
+
+  .luck-opportunities-image {
+    height: 430px;
+  }
+
+  .luck-opportunity-points {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .luck-obstacles-image {
+    height: 430px;
+  }
+
+  .luck-obstacles-image::before {
+    top: -10px;
+    left: -10px;
+  }
+
+  .luck-obstacles-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .luck-career-image {
+    height: 420px;
+  }
+
+  .luck-tradition {
+    min-height: 600px;
+  }
+
+  .luck-tradition-content {
+    padding: 80px 0;
+  }
+
+  .luck-tradition-content h2 {
+    font-size: 46px;
+  }
+
+  .luck-process-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .luck-process-card {
+    padding: 25px;
+  }
+
+  .luck-consultation-image {
+    height: 420px;
+  }
+
+  .luck-country-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .luck-country-grid a {
+    min-height: 130px;
+    padding: 20px 17px;
+    font-size: 13px;
+  }
+
+  .luck-faq-intro {
+    position: static;
+  }
+
+  .luck-faq-item summary {
+    padding: 18px;
+    font-size: 21px;
+  }
+
+  .luck-faq-answer {
+    padding: 0 18px 18px;
+  }
+
+  .luck-disclaimer .luck-container {
+    gap: 15px;
+  }
+
+  .luck-disclaimer h3 {
+    font-size: 21px;
+  }
+
+  .luck-disclaimer p {
+    font-size: 11px;
+  }
+
+  .luck-final-cta {
+    min-height: 510px;
+  }
+
+  .luck-final-cta-content h2 {
+    font-size: 48px;
+  }
+
+  .luck-final-contact {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+  .luck-hero h1 {
+    font-size: 49px;
+  }
+
+  .luck-section-heading h2 {
+    font-size: 38px;
+  }
+
+  .luck-country-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .luck-country-grid a {
+    padding: 17px 14px;
+  }
+
+  .luck-hero-trust {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .luck-final-cta-content h2 {
+    font-size: 42px;
+  }
+}

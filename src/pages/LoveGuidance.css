@@ -1,0 +1,1371 @@
+
+/* =========================================================
+   ANCESTRAL WISDOM
+   LOVE & RELATIONSHIP GUIDANCE PAGE
+   PREMIUM RESPONSIVE STYLESHEET
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/* =========================================================
+   ROOT
+   ========================================================= */
+
+.love-page {
+  --love-black: #080a08;
+  --love-dark: #101510;
+  --love-green: #14251a;
+  --love-green-light: #203b29;
+  --love-gold: #c5a059;
+  --love-gold-light: #dfc28b;
+  --love-white: #f5f3ed;
+  --love-muted: #aaa99f;
+  --love-border: rgba(197, 160, 89, 0.22);
+
+  font-family: 'DM Sans', sans-serif;
+  color: var(--love-white);
+  background: var(--love-black);
+  overflow: hidden;
+}
+
+.love-page *,
+.love-page *::before,
+.love-page *::after {
+  box-sizing: border-box;
+}
+
+.love-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.love-page a {
+  text-decoration: none;
+}
+
+.love-page h1,
+.love-page h2,
+.love-page h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.love-page h1 {
+  font-size: clamp(52px, 7vw, 100px);
+}
+
+.love-page h2 {
+  font-size: clamp(40px, 5vw, 68px);
+}
+
+.love-page h3 {
+  font-size: 29px;
+}
+
+.love-page p {
+  color: var(--love-muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.love-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.love-section {
+  padding: 110px 7%;
+}
+
+.love-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--love-gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+.love-eyebrow::before {
+  content: "";
+  width: 32px;
+  height: 1px;
+  background: var(--love-gold);
+}
+
+.love-page h1 span,
+.love-page h2 span {
+  display: block;
+  color: var(--love-gold);
+}
+
+.love-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 17px 28px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: all 0.35s ease;
+}
+
+.love-btn-gold {
+  background: var(--love-gold);
+  border: 1px solid var(--love-gold);
+  color: var(--love-black);
+}
+
+.love-btn-gold:hover {
+  background: transparent;
+  color: var(--love-gold);
+  transform: translateY(-3px);
+}
+
+.love-btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: var(--love-white);
+}
+
+.love-btn-outline:hover {
+  border-color: var(--love-gold);
+  color: var(--love-gold);
+  transform: translateY(-3px);
+}
+
+.love-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--love-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.love-text-link:hover {
+  gap: 18px;
+  color: var(--love-gold-light);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.love-hero {
+  position: relative;
+  min-height: 790px;
+  height: min(90vh, 950px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--love-dark);
+}
+
+.love-hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.love-hero-image img {
+  object-position: center 40%;
+  animation: loveHeroZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes loveHeroZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.07);
+  }
+}
+
+.love-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 5, 0.97) 0%,
+      rgba(5, 8, 5, 0.86) 35%,
+      rgba(5, 8, 5, 0.53) 65%,
+      rgba(5, 8, 5, 0.22) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 5, 0.8),
+      transparent 50%
+    );
+}
+
+.love-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 7%;
+}
+
+.love-hero-content .love-eyebrow {
+  margin-bottom: 25px;
+}
+
+.love-hero-content h1 {
+  max-width: 1000px;
+  color: var(--love-white);
+  margin: 0 0 30px;
+  letter-spacing: -1px;
+}
+
+.love-hero-content h1 span {
+  margin-top: 8px;
+}
+
+.love-hero-content > p {
+  max-width: 650px;
+  margin: 0 0 38px;
+  font-size: 16px;
+  line-height: 1.95;
+  color: rgba(245, 243, 237, 0.82);
+}
+
+.love-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.love-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.love-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(245, 243, 237, 0.78);
+  font-size: 11px;
+  letter-spacing: 0.4px;
+}
+
+.love-hero-trust svg {
+  color: var(--love-gold);
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.love-introduction {
+  background: var(--love-black);
+}
+
+.love-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.love-intro-heading h2 {
+  max-width: 700px;
+  margin: 25px 0 0;
+}
+
+.love-intro-heading h2 span {
+  margin-top: 10px;
+}
+
+.love-intro-content p {
+  margin: 0 0 20px;
+}
+
+.love-intro-content .love-text-link {
+  margin-top: 15px;
+}
+
+/* =========================================================
+   FEATURE
+   ========================================================= */
+
+.love-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 700px;
+  background: var(--love-dark);
+}
+
+.love-feature-image {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.love-feature-image img {
+  transition: transform 0.8s ease;
+}
+
+.love-feature:hover .love-feature-image img {
+  transform: scale(1.04);
+}
+
+.love-feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 9%;
+}
+
+.love-feature-content h2 {
+  margin: 25px 0;
+}
+
+.love-feature-content p {
+  margin: 0 0 20px;
+}
+
+.love-feature-content .love-btn {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.love-services {
+  background: var(--love-black);
+}
+
+.love-section-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 70px;
+}
+
+.love-section-heading .love-eyebrow {
+  justify-content: center;
+}
+
+.love-section-heading h2 {
+  margin: 25px 0;
+}
+
+.love-section-heading > p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.love-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.love-service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 40px;
+  background: #111711;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  transition: 0.35s ease;
+}
+
+.love-service-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--love-border);
+  background: #151d15;
+}
+
+.love-service-number {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: rgba(197, 160, 89, 0.45);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+}
+
+.love-service-icon {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--love-gold);
+  border: 1px solid var(--love-border);
+  margin-bottom: 30px;
+}
+
+.love-service-card h3 {
+  max-width: 440px;
+  font-size: 32px;
+  margin: 0 0 20px;
+  color: var(--love-white);
+}
+
+.love-service-card p {
+  margin: 0 0 30px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.love-card-link {
+  margin-top: auto;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  color: var(--love-gold);
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.love-card-link:hover {
+  color: var(--love-gold-light);
+}
+
+.love-card-link svg {
+  transition: transform 0.3s ease;
+}
+
+.love-card-link:hover svg {
+  transform: translateX(5px);
+}
+
+/* =========================================================
+   RECONCILIATION
+   ========================================================= */
+
+.love-reconciliation {
+  background: var(--love-dark);
+}
+
+.love-reconciliation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.love-reconciliation-image {
+  height: 680px;
+  overflow: hidden;
+  position: relative;
+}
+
+.love-reconciliation-image img {
+  transition: transform 0.7s ease;
+}
+
+.love-reconciliation-image:hover img {
+  transform: scale(1.04);
+}
+
+.love-reconciliation-content h2 {
+  margin: 25px 0;
+}
+
+.love-reconciliation-content p {
+  margin: 0 0 20px;
+}
+
+.love-check-list {
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  margin: 30px 0;
+  list-style: none;
+}
+
+.love-check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: rgba(245, 243, 237, 0.8);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.love-check-list svg {
+  color: var(--love-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.love-reconciliation-content .love-btn {
+  margin-top: 15px;
+}
+
+/* =========================================================
+   EMOTIONAL WELLBEING
+   ========================================================= */
+
+.love-emotional {
+  background: var(--love-black);
+}
+
+.love-emotional-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.love-emotional-content h2 {
+  margin: 25px 0;
+}
+
+.love-emotional-content p {
+  margin: 0 0 20px;
+}
+
+.love-emotional-content .love-text-link {
+  margin-top: 15px;
+}
+
+.love-emotional-image {
+  height: 620px;
+  overflow: hidden;
+}
+
+.love-emotional-image img {
+  transition: transform 0.7s ease;
+}
+
+.love-emotional-image:hover img {
+  transform: scale(1.04);
+}
+
+/* =========================================================
+   TRADITION
+   ========================================================= */
+
+.love-tradition {
+  background: var(--love-green);
+}
+
+.love-tradition-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.love-tradition-image {
+  height: 650px;
+  overflow: hidden;
+}
+
+.love-tradition-image img {
+  transition: transform 0.7s ease;
+}
+
+.love-tradition-image:hover img {
+  transform: scale(1.04);
+}
+
+.love-tradition-content h2 {
+  margin: 25px 0;
+}
+
+.love-tradition-content p {
+  margin: 0 0 20px;
+  color: rgba(245, 243, 237, 0.7);
+}
+
+.love-tradition-content .love-btn {
+  margin-top: 20px;
+}
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.love-process {
+  background: var(--love-black);
+}
+
+.love-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.love-process-card {
+  position: relative;
+  padding: 45px 35px;
+  background: rgba(255, 255, 255, 0.018);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.35s ease;
+}
+
+.love-process-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--love-border);
+  background: rgba(197, 160, 89, 0.035);
+}
+
+.love-process-step {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  color: rgba(197, 160, 89, 0.5);
+}
+
+.love-process-card > svg {
+  color: var(--love-gold);
+  margin-bottom: 28px;
+}
+
+.love-process-card h3 {
+  margin: 0 0 18px;
+  font-size: 29px;
+}
+
+.love-process-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* =========================================================
+   INTERNATIONAL
+   ========================================================= */
+
+.love-international {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--love-dark);
+}
+
+.love-international-image {
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.love-international-image img {
+  min-height: 700px;
+}
+
+.love-international-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 9%;
+}
+
+.love-international-content h2 {
+  margin: 25px 0;
+}
+
+.love-international-content p {
+  margin: 0 0 20px;
+}
+
+.love-country-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 25px 0 35px;
+}
+
+.love-country-list span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--love-border);
+  background: rgba(197, 160, 89, 0.04);
+  color: var(--love-white);
+  font-size: 12px;
+}
+
+.love-country-list svg {
+  color: var(--love-gold);
+  flex-shrink: 0;
+}
+
+.love-international-content .love-btn {
+  align-self: flex-start;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.love-faq {
+  background: var(--love-black);
+}
+
+.love-faq-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.love-faq-heading {
+  position: sticky;
+  top: 100px;
+}
+
+.love-faq-heading h2 {
+  margin: 25px 0;
+}
+
+.love-faq-heading > p {
+  margin: 0 0 25px;
+}
+
+.love-faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.love-faq-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.3s ease;
+}
+
+.love-faq-item[open] {
+  border-color: var(--love-border);
+}
+
+.love-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px;
+  color: var(--love-white);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+  cursor: pointer;
+  list-style: none;
+}
+
+.love-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.love-faq-item summary svg {
+  color: var(--love-gold);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.love-faq-item[open] summary svg {
+  transform: rotate(45deg);
+}
+
+.love-faq-answer {
+  padding: 0 24px 24px;
+}
+
+.love-faq-answer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   DISCLAIMER
+   ========================================================= */
+
+.love-disclaimer {
+  padding: 55px 7%;
+  background: #101710;
+  border-top: 1px solid rgba(197, 160, 89, 0.12);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.12);
+}
+
+.love-disclaimer-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.love-disclaimer-inner > svg {
+  color: var(--love-gold);
+  flex-shrink: 0;
+}
+
+.love-disclaimer-inner h3 {
+  margin: 0 0 15px;
+  font-size: 27px;
+}
+
+.love-disclaimer-inner p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.love-final-cta {
+  position: relative;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 110px 7%;
+  overflow: hidden;
+}
+
+.love-final-image {
+  position: absolute;
+  inset: 0;
+}
+
+.love-final-image img {
+  object-position: center;
+}
+
+.love-final-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(5, 8, 5, 0.9),
+      rgba(5, 8, 5, 0.65)
+    ),
+    rgba(5, 8, 5, 0.35);
+}
+
+.love-final-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.love-final-content .love-eyebrow {
+  justify-content: center;
+}
+
+.love-final-content h2 {
+  margin: 25px 0;
+  font-size: clamp(45px, 6vw, 82px);
+}
+
+.love-final-content > p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: rgba(245, 243, 237, 0.8);
+}
+
+.love-final-content .love-btn {
+  min-width: 280px;
+}
+
+.love-final-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  color: rgba(245, 243, 237, 0.65);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.love-final-note svg {
+  color: var(--love-gold);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .love-section {
+    padding: 90px 5%;
+  }
+
+  .love-intro-grid,
+  .love-reconciliation-grid,
+  .love-emotional-grid,
+  .love-tradition-grid,
+  .love-faq-grid {
+    gap: 50px;
+  }
+
+  .love-feature-content,
+  .love-international-content {
+    padding: 75px 7%;
+  }
+
+  .love-services-grid {
+    gap: 20px;
+  }
+
+  .love-service-card {
+    padding: 35px 28px;
+  }
+
+  .love-process-grid {
+    gap: 18px;
+  }
+
+  .love-process-card {
+    padding: 35px 25px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .love-section {
+    padding: 75px 6%;
+  }
+
+  /* HERO */
+
+  .love-hero {
+    min-height: 720px;
+    height: auto;
+  }
+
+  .love-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(5, 8, 5, 0.93),
+        rgba(5, 8, 5, 0.65)
+      ),
+      linear-gradient(
+        0deg,
+        rgba(5, 8, 5, 0.85),
+        transparent
+      );
+  }
+
+  .love-hero-content {
+    padding: 110px 6% 80px;
+  }
+
+  .love-hero-content h1 {
+    font-size: clamp(47px, 11vw, 75px);
+  }
+
+  .love-hero-content > p {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .love-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .love-hero-actions .love-btn {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .love-hero-trust {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 17px;
+    margin-top: 35px;
+  }
+
+  /* INTRO */
+
+  .love-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .love-intro-heading h2 {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  /* FEATURE */
+
+  .love-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .love-feature-image {
+    min-height: 400px;
+    height: 400px;
+  }
+
+  .love-feature-content {
+    padding: 75px 6%;
+  }
+
+  .love-feature-content h2 {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  .love-feature-content .love-btn {
+    width: 100%;
+  }
+
+  /* SERVICES */
+
+  .love-section-heading {
+    margin-bottom: 45px;
+  }
+
+  .love-section-heading h2 {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  .love-services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .love-service-card {
+    padding: 32px 26px;
+  }
+
+  .love-service-card h3 {
+    font-size: 29px;
+  }
+
+  /* RECONCILIATION */
+
+  .love-reconciliation-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .love-reconciliation-image {
+    height: 450px;
+  }
+
+  .love-reconciliation-content h2 {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  .love-reconciliation-content .love-btn {
+    width: 100%;
+  }
+
+  /* EMOTIONAL */
+
+  .love-emotional-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .love-emotional-content h2 {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  .love-emotional-image {
+    height: 450px;
+  }
+
+  /* TRADITION */
+
+  .love-tradition-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .love-tradition-image {
+    height: 450px;
+  }
+
+  .love-tradition-content h2 {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  .love-tradition-content .love-btn {
+    width: 100%;
+  }
+
+  /* PROCESS */
+
+  .love-process-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .love-process-card {
+    padding: 35px 28px;
+  }
+
+  /* INTERNATIONAL */
+
+  .love-international {
+    grid-template-columns: 1fr;
+  }
+
+  .love-international-image {
+    min-height: 400px;
+    height: 400px;
+  }
+
+  .love-international-content {
+    padding: 75px 6%;
+  }
+
+  .love-international-content h2 {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  .love-country-list {
+    grid-template-columns: 1fr;
+  }
+
+  .love-international-content .love-btn {
+    width: 100%;
+  }
+
+  /* FAQ */
+
+  .love-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .love-faq-heading {
+    position: static;
+  }
+
+  .love-faq-heading h2 {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  .love-faq-item summary {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .love-faq-answer {
+    padding: 0 20px 20px;
+  }
+
+  /* DISCLAIMER */
+
+  .love-disclaimer {
+    padding: 40px 6%;
+  }
+
+  .love-disclaimer-inner {
+    gap: 18px;
+  }
+
+  .love-disclaimer-inner h3 {
+    font-size: 24px;
+  }
+
+  /* FINAL CTA */
+
+  .love-final-cta {
+    min-height: 600px;
+    padding: 85px 6%;
+  }
+
+  .love-final-content h2 {
+    font-size: clamp(40px, 10vw, 60px);
+  }
+
+  .love-final-content > p {
+    font-size: 14px;
+  }
+
+  .love-final-content .love-btn {
+    width: 100%;
+  }
+
+  .love-final-note {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .love-section {
+    padding: 65px 5%;
+  }
+
+  .love-hero {
+    min-height: 660px;
+  }
+
+  .love-hero-content {
+    padding: 100px 5% 70px;
+  }
+
+  .love-hero-content h1 {
+    font-size: 47px;
+  }
+
+  .love-hero-content > p {
+    font-size: 13px;
+  }
+
+  .love-eyebrow {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .love-btn {
+    padding: 16px 20px;
+    font-size: 10px;
+  }
+
+  .love-feature-image {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .love-feature-content {
+    padding: 60px 5%;
+  }
+
+  .love-service-card {
+    padding: 28px 22px;
+  }
+
+  .love-service-card h3 {
+    font-size: 26px;
+  }
+
+  .love-service-card p {
+    font-size: 13px;
+  }
+
+  .love-service-number {
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+  }
+
+  .love-service-icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .love-reconciliation-image,
+  .love-emotional-image,
+  .love-tradition-image {
+    height: 320px;
+  }
+
+  .love-process-card {
+    padding: 28px 23px;
+  }
+
+  .love-process-card h3 {
+    font-size: 26px;
+  }
+
+  .love-international-image {
+    min-height: 320px;
+    height: 320px;
+  }
+
+  .love-country-list span {
+    padding: 13px;
+  }
+
+  .love-faq-item summary {
+    padding: 17px;
+    gap: 12px;
+  }
+
+  .love-faq-answer {
+    padding: 0 17px 17px;
+  }
+
+  .love-faq-answer p {
+    font-size: 13px;
+  }
+
+  .love-disclaimer-inner {
+    flex-direction: column;
+  }
+
+  .love-disclaimer-inner p {
+    font-size: 12px;
+  }
+
+  .love-final-cta {
+    min-height: 550px;
+    padding: 75px 5%;
+  }
+
+  .love-final-content h2 {
+    font-size: 42px;
+  }
+
+  .love-final-note {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.love-page a:focus-visible,
+.love-page summary:focus-visible {
+  outline: 2px solid var(--love-gold);
+  outline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .love-page *,
+  .love-page *::before,
+  .love-page *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================
+   END
+   ========================================================= */

@@ -1,0 +1,1000 @@
+
+/* =========================================================
+   ANCESTRAL WISDOM
+   UNITED STATES COUNTRY LANDING PAGE
+   Premium black, forest green and antique gold
+========================================================= */
+
+.usa-page {
+  --usa-black: #080b08;
+  --usa-deep: #0d130d;
+  --usa-green: #142017;
+  --usa-gold: #c5a45c;
+  --usa-gold-light: #dfc68d;
+  --usa-cream: #f3eee3;
+  --usa-white: #ffffff;
+
+  background: var(--usa-black);
+  color: var(--usa-cream);
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+
+.usa-page * {
+  box-sizing: border-box;
+}
+
+.usa-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.usa-section {
+  padding: 110px 0;
+}
+
+.usa-page h1,
+.usa-page h2,
+.usa-page h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+}
+
+.usa-page h2 {
+  color: var(--usa-cream);
+  font-size: clamp(2.5rem, 4.5vw, 4.1rem);
+  line-height: 1.06;
+  margin: 17px 0 23px;
+  letter-spacing: -1.2px;
+}
+
+.usa-page h2 em,
+.usa-page h1 em {
+  display: block;
+  color: var(--usa-gold-light);
+  font-style: italic;
+}
+
+.usa-page p {
+  line-height: 1.85;
+}
+
+.usa-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--usa-gold);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.usa-eyebrow > span {
+  width: 27px;
+  height: 1px;
+  background: var(--usa-gold);
+}
+
+.usa-eyebrow-dark {
+  color: #a18446;
+}
+
+.usa-button {
+  min-height: 54px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  padding: 14px 23px;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.usa-button-gold {
+  background: var(--usa-gold);
+  border: 1px solid var(--usa-gold);
+  color: #10120c;
+}
+
+.usa-button-gold:hover {
+  background: var(--usa-gold-light);
+  border-color: var(--usa-gold-light);
+  transform: translateY(-3px);
+}
+
+.usa-button-outline {
+  color: var(--usa-cream);
+  border: 1px solid rgba(223, 198, 141, 0.6);
+  background: rgba(8, 11, 8, 0.2);
+}
+
+.usa-button-outline:hover {
+  background: var(--usa-gold);
+  color: var(--usa-black);
+}
+
+.usa-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--usa-gold-light);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-top: 13px;
+  transition: gap 0.3s ease;
+}
+
+.usa-text-link:hover {
+  gap: 16px;
+}
+
+/* HERO */
+
+.usa-hero {
+  min-height: 760px;
+  height: min(850px, 88vh);
+  position: relative;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+  background: #101710;
+}
+
+.usa-hero-image,
+.usa-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.usa-hero-image {
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+}
+
+.usa-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(5, 9, 6, 0.96) 0%, rgba(5, 9, 6, 0.82) 42%, rgba(5, 9, 6, 0.35) 100%),
+    linear-gradient(0deg, rgba(5, 9, 6, 0.85), transparent 40%);
+}
+
+.usa-hero-content {
+  padding-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.usa-hero h1 {
+  max-width: 880px;
+  font-size: clamp(3.6rem, 7.4vw, 6.4rem);
+  line-height: 0.98;
+  letter-spacing: -2.5px;
+  margin: 27px 0;
+  color: #fffaf0;
+}
+
+.usa-hero-description {
+  max-width: 640px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 31px;
+}
+
+.usa-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.usa-hero-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 27px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.76rem;
+}
+
+.usa-hero-note svg {
+  color: var(--usa-gold);
+}
+
+.usa-hero-bottom {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1180px, calc(100% - 48px));
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.usa-hero-line {
+  height: 1px;
+  width: 35px;
+  background: var(--usa-gold);
+  opacity: 0.7;
+}
+
+/* INTRODUCTION */
+
+.usa-intro {
+  background: var(--usa-cream);
+  color: #25281f;
+}
+
+.usa-intro-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.usa-intro-image-wrap {
+  position: relative;
+  padding: 0 0 32px 25px;
+}
+
+.usa-intro-image-wrap::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 75%;
+  height: 75%;
+  border: 1px solid #b69a5d;
+  opacity: 0.65;
+}
+
+.usa-intro-image {
+  position: relative;
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+.usa-image-caption {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: #101810;
+  color: white;
+  padding: 18px 22px;
+  min-width: 255px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.usa-caption-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  color: var(--usa-gold);
+  border: 1px solid rgba(197, 164, 92, 0.4);
+}
+
+.usa-image-caption strong,
+.usa-image-caption span {
+  display: block;
+}
+
+.usa-image-caption strong {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.12rem;
+  font-weight: 500;
+}
+
+.usa-image-caption div > span {
+  margin-top: 3px;
+  font-size: 0.66rem;
+  color: #b8b9ae;
+}
+
+.usa-intro-copy h2 {
+  color: #1a2119;
+}
+
+.usa-intro-copy h2 em {
+  color: #9a793c;
+}
+
+.usa-intro-copy p {
+  color: #64655b;
+  font-size: 0.9rem;
+  margin: 0 0 17px;
+}
+
+/* SECTION HEADING */
+
+.usa-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.usa-section-heading h2 {
+  margin-top: 18px;
+}
+
+.usa-section-heading > p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #aaa99f;
+  font-size: 0.9rem;
+}
+
+/* SERVICES */
+
+.usa-services {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(39, 61, 41, 0.35), transparent 55%),
+    #0b100b;
+}
+
+.usa-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.usa-service-card {
+  position: relative;
+  padding: 31px 28px 28px;
+  min-height: 285px;
+  background: linear-gradient(145deg, #172219, #101710);
+  border: 1px solid rgba(197, 164, 92, 0.17);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.usa-service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(197, 164, 92, 0.65);
+}
+
+.usa-service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.usa-service-number {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  color: #777e70;
+}
+
+.usa-service-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(197, 164, 92, 0.4);
+  color: var(--usa-gold);
+}
+
+.usa-service-card h3 {
+  color: #f4ead8;
+  font-size: 1.65rem;
+  line-height: 1.1;
+  margin: 0 0 13px;
+}
+
+.usa-service-card p {
+  color: #a9aca0;
+  font-size: 0.79rem;
+  line-height: 1.8;
+  min-height: 83px;
+  margin: 0 0 19px;
+}
+
+.usa-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--usa-gold-light);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.usa-card-link:hover {
+  gap: 14px;
+}
+
+/* HERITAGE */
+
+.usa-heritage {
+  background: #121a13;
+}
+
+.usa-heritage-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.92fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.usa-heritage-copy > p {
+  color: #b0b4a8;
+  font-size: 0.88rem;
+  margin-bottom: 17px;
+}
+
+.usa-heritage-points {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.usa-heritage-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e2dfd1;
+  font-size: 0.82rem;
+}
+
+.usa-heritage-points svg {
+  flex-shrink: 0;
+  color: var(--usa-gold);
+}
+
+.usa-heritage-image {
+  position: relative;
+  min-height: 540px;
+}
+
+.usa-heritage-image img {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.usa-heritage-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(4, 8, 4, 0.8), transparent 55%);
+}
+
+.usa-heritage-image-label {
+  position: absolute;
+  z-index: 2;
+  bottom: 28px;
+  left: 28px;
+}
+
+.usa-heritage-image-label span,
+.usa-heritage-image-label strong {
+  display: block;
+}
+
+.usa-heritage-image-label span {
+  color: var(--usa-gold-light);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+
+.usa-heritage-image-label strong {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* PROCESS */
+
+.usa-process {
+  background: #090d09;
+}
+
+.usa-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.usa-process-item {
+  position: relative;
+  padding: 32px 24px;
+  min-height: 260px;
+  border-top: 1px solid rgba(197, 164, 92, 0.5);
+  background: #111911;
+}
+
+.usa-process-number {
+  display: block;
+  color: var(--usa-gold);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+}
+
+.usa-process-item > svg {
+  color: var(--usa-gold-light);
+  margin-bottom: 18px;
+}
+
+.usa-process-item h3 {
+  font-size: 1.5rem;
+  color: #f2eadb;
+  margin: 0 0 12px;
+}
+
+.usa-process-item p {
+  color: #a7aa9e;
+  font-size: 0.77rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* REMOTE CONSULTATION */
+
+.usa-remote {
+  background: #17231a;
+}
+
+.usa-remote-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.usa-remote-image img {
+  display: block;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+}
+
+.usa-remote-copy h2 {
+  margin-bottom: 24px;
+}
+
+.usa-remote-copy > p {
+  color: #b7bdb1;
+  font-size: 0.88rem;
+  margin-bottom: 17px;
+}
+
+.usa-remote-copy .usa-button {
+  margin-top: 14px;
+}
+
+/* TRADITIONAL HEALING */
+
+.usa-tradition {
+  background: var(--usa-cream);
+  color: #25281f;
+}
+
+.usa-tradition-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.usa-tradition-image img {
+  display: block;
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+}
+
+.usa-tradition-copy h2 {
+  color: #1b2119;
+}
+
+.usa-tradition-copy h2 em {
+  color: #9b7b41;
+}
+
+.usa-tradition-copy > p {
+  color: #64655c;
+  font-size: 0.88rem;
+  margin-bottom: 17px;
+}
+
+.usa-tradition-copy .usa-text-link {
+  color: #8e7038;
+}
+
+/* FAQ */
+
+.usa-faq {
+  background: #0e150f;
+}
+
+.usa-faq-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.usa-faq-intro {
+  position: sticky;
+  top: 35px;
+}
+
+.usa-faq-intro h2 {
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+}
+
+.usa-faq-intro > p {
+  color: #a9ada1;
+  font-size: 0.86rem;
+  margin-bottom: 25px;
+}
+
+.usa-faq-list {
+  border-top: 1px solid rgba(197, 164, 92, 0.28);
+}
+
+.usa-faq-item {
+  border-bottom: 1px solid rgba(197, 164, 92, 0.28);
+}
+
+.usa-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  cursor: pointer;
+  padding: 23px 0;
+  color: #f1ebdd;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.35;
+}
+
+.usa-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.usa-faq-plus {
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+  border: 1px solid rgba(197, 164, 92, 0.55);
+  color: var(--usa-gold);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.usa-faq-item[open] .usa-faq-plus {
+  transform: rotate(45deg);
+}
+
+.usa-faq-item > p {
+  color: #a9ada1;
+  font-size: 0.82rem;
+  padding: 0 42px 20px 0;
+  margin: -3px 0 0;
+}
+
+/* DISCLAIMER */
+
+.usa-disclaimer {
+  background: #171e16;
+  border-top: 1px solid rgba(197, 164, 92, 0.2);
+  border-bottom: 1px solid rgba(197, 164, 92, 0.2);
+}
+
+.usa-disclaimer-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.usa-disclaimer-inner > svg {
+  color: var(--usa-gold);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.usa-disclaimer p {
+  color: #b8b9ae;
+  font-size: 0.73rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.usa-disclaimer strong {
+  color: var(--usa-gold-light);
+}
+
+/* FINAL CTA */
+
+.usa-final-cta {
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  isolation: isolate;
+  background: #101810;
+  padding: 100px 0;
+}
+
+.usa-final-cta-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at center, rgba(49, 67, 39, 0.55), transparent 68%),
+    linear-gradient(90deg, #080c08, #142016, #080c08);
+}
+
+.usa-final-cta-content {
+  max-width: 820px;
+}
+
+.usa-final-cta h2 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin: 22px 0;
+}
+
+.usa-final-cta-content > p {
+  color: #c0c3b7;
+  font-size: 0.9rem;
+  max-width: 650px;
+  margin: 0 auto 29px;
+}
+
+.usa-final-note {
+  display: block;
+  margin-top: 24px;
+  color: #92998d;
+  font-size: 0.67rem;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .usa-section {
+    padding: 85px 0;
+  }
+
+  .usa-intro-grid,
+  .usa-heritage-grid,
+  .usa-remote-grid,
+  .usa-tradition-grid {
+    gap: 45px;
+  }
+
+  .usa-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .usa-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .usa-faq-grid {
+    gap: 45px;
+  }
+
+  .usa-hero {
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .usa-container {
+    width: min(100% - 36px, 540px);
+  }
+
+  .usa-section {
+    padding: 70px 0;
+  }
+
+  .usa-hero {
+    height: auto;
+    min-height: 720px;
+    padding: 115px 0 100px;
+  }
+
+  .usa-hero-image {
+    background-position: 60% center;
+  }
+
+  .usa-hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(5, 9, 6, 0.93), rgba(5, 9, 6, 0.62)),
+      linear-gradient(0deg, rgba(5, 9, 6, 0.8), transparent);
+  }
+
+  .usa-hero h1 {
+    font-size: clamp(3.1rem, 13vw, 4.8rem);
+    letter-spacing: -1.5px;
+    margin: 23px 0;
+  }
+
+  .usa-hero-description {
+    font-size: 0.88rem;
+  }
+
+  .usa-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .usa-hero-actions .usa-button {
+    width: 100%;
+  }
+
+  .usa-hero-bottom {
+    width: calc(100% - 36px);
+    gap: 9px;
+    font-size: 0.49rem;
+    letter-spacing: 1px;
+  }
+
+  .usa-hero-line {
+    width: 17px;
+  }
+
+  .usa-intro-grid,
+  .usa-heritage-grid,
+  .usa-remote-grid,
+  .usa-tradition-grid,
+  .usa-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 43px;
+  }
+
+  .usa-intro-image-wrap {
+    padding-left: 12px;
+    padding-bottom: 26px;
+  }
+
+  .usa-intro-image {
+    height: 390px;
+  }
+
+  .usa-image-caption {
+    right: -5px;
+    padding: 13px;
+    min-width: 220px;
+  }
+
+  .usa-section-heading {
+    margin-bottom: 38px;
+  }
+
+  .usa-page h2 {
+    font-size: clamp(2.5rem, 11vw, 3.5rem);
+  }
+
+  .usa-services-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .usa-service-card {
+    min-height: auto;
+    padding: 26px 23px;
+  }
+
+  .usa-service-card p {
+    min-height: auto;
+  }
+
+  .usa-heritage-image,
+  .usa-heritage-image img {
+    min-height: 380px;
+    height: 380px;
+  }
+
+  .usa-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .usa-process-item {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .usa-process-number {
+    margin-bottom: 18px;
+  }
+
+  .usa-remote-image img,
+  .usa-tradition-image img {
+    height: 360px;
+  }
+
+  .usa-faq-intro {
+    position: static;
+  }
+
+  .usa-faq-item summary {
+    font-size: 1.18rem;
+    padding: 20px 0;
+  }
+
+  .usa-faq-item > p {
+    padding-right: 8px;
+  }
+
+  .usa-disclaimer-inner {
+    gap: 12px;
+  }
+
+  .usa-final-cta {
+    min-height: auto;
+    padding: 85px 0;
+  }
+
+  .usa-final-cta h2 {
+    font-size: 3.2rem;
+  }
+
+  .usa-final-cta-content > p {
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .usa-container {
+    width: calc(100% - 28px);
+  }
+
+  .usa-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .usa-hero-bottom {
+    font-size: 0.42rem;
+    gap: 6px;
+  }
+
+  .usa-button {
+    padding: 13px 15px;
+    font-size: 0.72rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .usa-page *,
+  .usa-page *::before,
+  .usa-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
